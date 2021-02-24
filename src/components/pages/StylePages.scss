@@ -1,0 +1,77 @@
+@import "../../utilities/_variables";
+
+body {
+}
+* {
+  font-size: 20px;
+  direction: rtl;
+}
+.illustrations {
+  width: 500px;
+  height: 400px;
+}
+// --------------- HOME PAGE ------------------
+.home-page {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+// --------------- ABOUT PAGE ------------------
+.about-page {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  // margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+  // margin: 20%;
+  .wiki-link {
+    margin-top: 30px;
+    border: 3px solid $tertiary;
+    background-color: $lightWhite;
+    border-radius: 50%;
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $tertiary;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+// --------------- CONTACT PAGE ------------------
+.contact-page {
+  margin: 12%;
+  // display: flex;
+  flex-direction: row-reverse;
+  .fb-icon {
+    color: $secondary;
+    position: relative;
+    font-size: 1.8rem;
+  }
+  .send {
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
+    color: white;
+    margin: 50px;
+    span {
+      color: white;
+    }
+    .icon {
+      color: $secondary;
+      height: 80px;
+      width: 80px;
+    }
+  }
+  img {
+    width: 500px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,181 @@
+@import "../utilities/_variables";
+// ---------------   MODAL STYLES -------------
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 520px;
+  background-color: $primary;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 30px;
+}
+
+#noModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+.area {
+  background-color: "white";
+  width: 300px;
+  padding: 8px;
+  border: 1px solid gray;
+  font-family: "Varela Round", sans-serif;
+}
+
+// ------------   ClOSE BUTTON   --------------
+.close-container {
+  position: relative;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.leftright {
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: $secondary;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+.rightleft {
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: $secondary;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+label {
+  color: $tertiary;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+.close {
+  margin: 60px 0 0 5px;
+  position: absolute;
+}
+.close-container:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: $tertiary;
+}
+.close-container:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: $tertiary;
+}
+.close-container:hover label {
+  opacity: 1;
+}
+
+// --------------   SEND BUTTON   ---------------
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  margin: 20px;
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: $secondary;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    border-color: #fff;
+    transition: all 0.1s ease-in-out;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  margin: 30px auto 0 auto;
+  border: solid 2px #424242;
+  border-top: solid 2px $tertiary;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.check {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(-4px, 50px, 0);
+  opacity: 0;
+  span:nth-child(1) {
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+  span:nth-child(2) {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg) translate3d(14px, -4px, 0);
+    transform-origin: 100%;
+  }
+}
+
+.loader.active {
+  animation: loading 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.check.active {
+  opacity: 1;
+  transform: translate3d(-4px, 4px, 0);
+  transition: all 0.5s cubic-bezier(0.49, 1.74, 0.38, 1.74);
+  transition-delay: 0.2s;
+}
+
+@keyframes loading {
+  30% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+    transform: rotate(1080deg);
+    border-color: $tertiary;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(1080deg);
+    border-color: $tertiary;
+  }
+}
