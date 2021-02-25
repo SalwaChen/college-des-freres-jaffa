@@ -9,9 +9,9 @@ function Home() {
   };
   return (
     <>
-      <div className="home-page">
+      {/* <div className="home-page">
         <img style={SIZE} src={image} alt="home illustration" />
-      </div>
+      </div> */}
       {/* <HeroSection />
       <Cards />
       <Footer /> */}
