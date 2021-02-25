@@ -11,7 +11,6 @@
   z-index: 1000;
   border-radius: 30px;
 }
-
 #noModal {
   position: fixed;
   top: 0;
@@ -29,14 +28,11 @@
   font-family: "Varela Round", sans-serif;
 }
 
-// ------------   ClOSE BUTTON   --------------
+// ------------   ClOSE AREA   --------------
 .close-container {
-  position: relative;
-  margin: auto;
-  width: 50px;
-  height: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 50px 0;
   cursor: pointer;
 }
 .leftright {
@@ -59,18 +55,16 @@
   transform: rotate(-45deg);
   transition: all 0.3s ease-in;
 }
-label {
+.close-text {
+  position: relative;
+  top: 50px;
   color: $tertiary;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 0.6em;
+  font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: all 0.3s ease-in;
-  opacity: 0;
-}
-.close {
-  margin: 60px 0 0 5px;
-  position: absolute;
+  opacity: 0; //change to 0 when done styling
 }
 .close-container:hover .leftright {
   transform: rotate(-45deg);
@@ -106,7 +100,7 @@ label {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   &:hover {
-    background-color: transparent;
+    background-color: $tertiary;
     border-color: #fff;
     transition: all 0.1s ease-in-out;
   }

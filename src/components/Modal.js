@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import ReactDom from "react-dom";
 import "./Modal.scss";
+import { Container } from "react-bootstrap";
 
 function Modal({ children, open, onClose }) {
   const [email, setEmail] = useState("");
@@ -29,66 +30,68 @@ function Modal({ children, open, onClose }) {
 
   return ReactDom.createPortal(
     <>
-      <div id="noModal">
-        <div id="modal">
-          <div className="close-container" onClick={onClose}>
-            <div className="leftright"></div>
-            <div className="rightleft"></div>
-            <label className="close">close</label>
-          </div>
-          {children}
-          <form>
-            <input
-              type="text"
-              name="name"
-              placeholder="שם"
-              className="area"
-              onChange={(text) => setName(text.target.value)}
-            />
-            <br />
-            <input
-              type="email"
-              name="email"
-              placeholder="כתובת מייל "
-              value={email}
-              className="area"
-              onChange={(text) => setEmail(text.target.value)}
-            />
-            <br />
-            <textarea
-              placeholder="רשום הודעה כאן..."
-              onChange={(text) => setTextarea(text.target.value)}
-              name="message"
-              className="area text"
-              rows="6"
-              form="email-us"
-            ></textarea>
-            <br />
-            <div className="main">
-              <button className="button" onClick={handleSubmit}>
-                שלח
-              </button>
-              <div
-                className={`loader ${clicked ? "active" : ""}`}
-                onAnimationEnd={() => {
-                  setFade(false);
-                  // if (clicked) setTimeout(onClose(), 30000);
-                }}
-              >
+      <Container>
+        <div id="noModal">
+          <div id="modal">
+            <div className="close-container" onClick={onClose}>
+              <div className="leftright"></div>
+              <div className="rightleft"></div>
+              <label className="close-text">close</label>
+            </div>
+            {children}
+            <form>
+              <input
+                type="text"
+                name="name"
+                placeholder="שם"
+                className="area"
+                onChange={(text) => setName(text.target.value)}
+              />
+              <br />
+              <input
+                type="email"
+                name="email"
+                placeholder="כתובת מייל "
+                value={email}
+                className="area"
+                onChange={(text) => setEmail(text.target.value)}
+              />
+              <br />
+              <textarea
+                placeholder="רשום הודעה כאן..."
+                onChange={(text) => setTextarea(text.target.value)}
+                name="message"
+                className="area text"
+                rows="6"
+                form="email-us"
+              ></textarea>
+              <br />
+              <div className="main">
+                <button className="button" onClick={handleSubmit}>
+                  שלח
+                </button>
                 <div
-                  className={`check ${fade && clicked ? "" : "active"}`}
+                  className={`loader ${clicked ? "active" : ""}`}
                   onAnimationEnd={() => {
-                    if (clicked) setTimeout(onClose(), 3000);
+                    setFade(false);
+                    // if (clicked) setTimeout(onClose(), 30000);
                   }}
                 >
-                  <span className="check-one"></span>
-                  <span className="check-two"></span>
+                  <div
+                    className={`check ${fade && clicked ? "" : "active"}`}
+                    onAnimationEnd={() => {
+                      if (clicked) setTimeout(onClose(), 3000);
+                    }}
+                  >
+                    <span className="check-one"></span>
+                    <span className="check-two"></span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-      </div>
+      </Container>
     </>,
     document.getElementById("portal")
   );

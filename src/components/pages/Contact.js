@@ -4,6 +4,8 @@ import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { Container } from "react-bootstrap";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import Modal from "../Modal";
+import image from "../../images/secretary.png";
+
 function Contact() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,14 +40,13 @@ function Contact() {
 
         <button type="button" className="send" onClick={() => setIsOpen(true)}>
           <FontAwesomeIcon icon={faPaperPlane} className="icon" />
-          <span> צור קשר</span>
+          <div className="contact-symbol-img">
+            <div> צור קשר</div>
+            <img src={image} alt="secretary" className="secretary-img" />
+          </div>
         </button>
-        <Modal
-          id="modal"
-          open={isOpen}
-          onClose={() => setIsOpen(false)}
-        ></Modal>
       </div>
+      <Modal id="modal" open={isOpen} onClose={() => setIsOpen(false)}></Modal>
     </Container>
   );
 }

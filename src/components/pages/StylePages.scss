@@ -6,36 +6,29 @@ body {
   font-size: 20px;
   direction: rtl;
 }
-.illustrations {
-  width: 500px;
-  height: 400px;
-}
+
 // --------------- HOME PAGE ------------------
 .home-page {
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 // --------------- ABOUT PAGE ------------------
 .about-page {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  // margin: auto;
-  margin-left: auto;
-  margin-right: auto;
-  top: 150px;
-  // margin: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 12%;
+  .girl-on-books-img {
+    width: 100%;
+    height: auto;
+  }
+  .read-more {
+    font-weight: 600;
+    position: relative;
+    top: 292px;
+    right: 40px;
+  }
   .wiki-link {
-    margin-top: 30px;
-    border: 3px solid $tertiary;
-    background-color: $lightWhite;
-    border-radius: 50%;
-    width: 80px;
-    padding: 10px;
-    text-align: center;
+    width: 500px;
     a {
       text-decoration: none;
       color: $tertiary;
@@ -46,23 +39,28 @@ body {
   }
 }
 // ------------ CONTACT PAGE ---------------
+.secretary-img {
+  width: 230px;
+  height: 140px;
+}
 .cont-contact {
   display: flex;
   justify-content: center;
-  align-items: center;
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
 }
 .contact-page {
-  margin: 12%;
   display: flex;
+  flex-direction: row;
+
+  margin: 10%;
   .text {
     text-align: right;
   }
   .fb-icon {
     color: $secondary;
     position: relative;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .send {
     background-color: inherit;
@@ -70,7 +68,7 @@ body {
     border: none;
     color: white;
     margin: 50px;
-    span {
+    div {
       color: black;
     }
     .icon {
@@ -79,8 +77,9 @@ body {
       width: 80px;
     }
   }
-  img {
-    width: 500px;
-    height: 300px;
+}
+@media (max-width: 518px) {
+  .contact-page {
+    flex-direction: column;
   }
 }
