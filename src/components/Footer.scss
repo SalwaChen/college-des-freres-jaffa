@@ -1,0 +1,21 @@
+.footer-comp {
+  background-color: rgb(22, 22, 22);
+  color: white;
+  height: 150px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+.social-menu {
+  list-style: none;
+  display: flex;
+  a {
+    margin-left: 20px;
+  }
+  .fa {
+    font-size: 2rem;
+    color: #fdc723;
+  }
+}

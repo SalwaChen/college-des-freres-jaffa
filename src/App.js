@@ -1,7 +1,7 @@
 import { React } from "react";
 import "./App.scss";
 import "./components/Navbar";
-import { Navbar, Home, About, Contact, Forum } from "./index";
+import { Navbar, Home, About, Contact, Forum, Footer, Galery } from "./index";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
@@ -16,6 +16,9 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
+        <Route path="/galery">
+          <Galery />
+        </Route>
         <Route path="/forum">
           <Forum />
         </Route>
@@ -23,6 +26,7 @@ function App() {
           <Contact />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

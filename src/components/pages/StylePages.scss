@@ -31,9 +31,9 @@ body {
     width: 500px;
     a {
       text-decoration: none;
-      color: $tertiary;
+      color: $primary;
       &:hover {
-        color: $secondary;
+        color: $tertiary;
       }
     }
   }
