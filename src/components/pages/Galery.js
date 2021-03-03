@@ -14,7 +14,7 @@ function Galery() {
   return (
     <div>
       <Container>
-        <Carousel breakPoints={breakPoints}>
+        {/* <Carousel breakPoints={breakPoints}>
           <MyCard src={window.location.origin + "/img/1.jpg"} alt="image1" />
           <MyCard src={window.location.origin + "/img/2.jpg"} alt="image2" />
           <MyCard src={window.location.origin + "/img/3.jpg"} alt="image3" />
@@ -24,7 +24,7 @@ function Galery() {
           <MyCard src={window.location.origin + "/img/7.jpg"} alt="image7" />
           <MyCard src={window.location.origin + "/img/8.jpg"} alt="image8" />
           <MyCard src={window.location.origin + "/img/9.jpg"} alt="image9" />
-        </Carousel>
+        </Carousel> */}
       </Container>
     </div>
   );

@@ -1,0 +1,52 @@
+// ------------ CONTACT PAGE ---------------
+@import "../../utilities/_variables";
+
+body {
+  background-color: $background;
+}
+.cont-contact {
+  background-color: lighten($background, 7%);
+  border-radius: 6px;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 10%;
+}
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-part {
+  text-align: right;
+}
+.contact-part {
+}
+.fb-icon {
+  color: $yellow;
+  position: relative;
+  font-size: 1.6rem;
+}
+.send {
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin: 50px;
+  div {
+    color: $text;
+  }
+  .icon {
+    color: $yellow;
+    height: 80px;
+    width: 80px;
+  }
+}
+.secretary-img {
+  width: 230px;
+  height: 140px;
+}
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+  }
+}

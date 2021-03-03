@@ -1,12 +1,10 @@
 @import "../utilities/_variables";
 
 .cont-nav {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
-  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
-  background-color: rgb(22, 22, 22);
 }
 .nav-links {
   height: 100%;
@@ -22,10 +20,12 @@
 .main-nav-active {
   border-bottom: 1px solid white;
   .fa-nav {
-    color: #fdc723;
+    display: inline-block;
+    color: #f0df00;
   }
 }
 .fa-nav {
+  display: none;
   margin: 0 6px;
 }
 @media only screen and (max-width: 768px) {

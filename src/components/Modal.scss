@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import "../utilities/_variables";
-// ---------------   MODAL STYLES -------------
+
+// ----------- MODAL STYLES ---------
 #modal {
   position: fixed;
   top: 50%;
@@ -40,7 +42,7 @@
   width: 50px;
   position: absolute;
   margin-top: 24px;
-  background-color: $secondary;
+  background-color: $text;
   border-radius: 2px;
   transform: rotate(45deg);
   transition: all 0.3s ease-in;
@@ -50,7 +52,7 @@
   width: 50px;
   position: absolute;
   margin-top: 24px;
-  background-color: $secondary;
+  background-color: $text;
   border-radius: 2px;
   transform: rotate(-45deg);
   transition: all 0.3s ease-in;
@@ -68,11 +70,11 @@
 }
 .close-container:hover .leftright {
   transform: rotate(-45deg);
-  background-color: $tertiary;
+  background-color: $yellow;
 }
 .close-container:hover .rightleft {
   transform: rotate(45deg);
-  background-color: $tertiary;
+  background-color: $yellow;
 }
 .close-container:hover label {
   opacity: 1;
@@ -87,21 +89,22 @@
 }
 .button {
   margin: 20px;
+  font-family: Varela Round;
   position: relative;
   display: block;
   width: 200px;
   height: 36px;
   border-radius: 18px;
-  background-color: $secondary;
+  background-color: $text;
   border: solid 1px transparent;
-  color: #fff;
+  color: black;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 900;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   &:hover {
-    background-color: $tertiary;
-    border-color: #fff;
+    background-color: $yellow;
+    border-color: $text;
     transition: all 0.1s ease-in-out;
   }
 }

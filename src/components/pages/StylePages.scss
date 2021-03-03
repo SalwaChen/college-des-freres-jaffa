@@ -1,6 +1,7 @@
 @import "../../utilities/_variables";
 
 body {
+  background-color: $background;
 }
 * {
   font-size: 20px;
@@ -10,76 +11,11 @@ body {
 // --------------- HOME PAGE ------------------
 .home-page {
 }
-// --------------- ABOUT PAGE ------------------
-.about-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: 12%;
-  .girl-on-books-img {
-    width: 100%;
+//-------------- FORUM PAGE -------------
+.forum-page {
+  background-color: #fff;
+  img {
+    width: 50%;
     height: auto;
-  }
-  .read-more {
-    font-weight: 600;
-    position: relative;
-    top: 292px;
-    right: 40px;
-  }
-  .wiki-link {
-    width: 500px;
-    a {
-      text-decoration: none;
-      color: $primary;
-      &:hover {
-        color: $tertiary;
-      }
-    }
-  }
-}
-// ------------ CONTACT PAGE ---------------
-.secretary-img {
-  width: 230px;
-  height: 140px;
-}
-.cont-contact {
-  display: flex;
-  justify-content: center;
-  border-radius: 6px;
-  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
-}
-.contact-page {
-  display: flex;
-  flex-direction: row;
-
-  margin: 10%;
-  .text {
-    text-align: right;
-  }
-  .fb-icon {
-    color: $secondary;
-    position: relative;
-    font-size: 1.6rem;
-  }
-  .send {
-    background-color: inherit;
-    cursor: pointer;
-    border: none;
-    color: white;
-    margin: 50px;
-    div {
-      color: black;
-    }
-    .icon {
-      color: $secondary;
-      height: 80px;
-      width: 80px;
-    }
-  }
-}
-@media (max-width: 518px) {
-  .contact-page {
-    flex-direction: column;
   }
 }

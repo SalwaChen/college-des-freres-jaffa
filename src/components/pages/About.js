@@ -1,5 +1,5 @@
 import React from "react";
-import "./StylePages.scss";
+import "./About.scss";
 import image from "../../images/about-us.png";
 import { Container } from "react-bootstrap";
 // import image2 from "../../images/home.png";
@@ -10,7 +10,7 @@ function About() {
     height: 400,
   };
   return (
-    <Container>
+    <Container className="cont-about">
       <div className="about-page">
         <div className="text">
           בית הספר הוקם ב-1882, על ידי מסדר ההוראה הקתולי. בבית ספר זה לומדים
@@ -33,7 +33,6 @@ function About() {
             />
           </a>
         </div>
-        {/* <img style={SIZE} src={image2} alt="about-us illustration 2" /> */}
       </div>
     </Container>
   );

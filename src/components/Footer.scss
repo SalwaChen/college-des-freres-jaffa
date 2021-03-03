@@ -1,12 +1,15 @@
+@import "../utilities/_variables";
+
 .footer-comp {
-  background-color: rgb(22, 22, 22);
-  color: white;
-  height: 150px;
+  height: 120px;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   bottom: 0;
+}
+div {
+  color: white;
 }
 .social-menu {
   list-style: none;
@@ -16,6 +19,6 @@
   }
   .fa {
     font-size: 2rem;
-    color: #fdc723;
+    color: $yellow;
   }
 }

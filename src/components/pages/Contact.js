@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { Container } from "react-bootstrap";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+import "./Contact.scss";
+
 import Modal from "../Modal";
 import image from "../../images/secretary.png";
 
@@ -12,7 +14,7 @@ function Contact() {
   return (
     <Container className="cont-contact">
       <div className="contact-page">
-        <div className="text">
+        <div className="text-part">
           בית ספר פרר יפו
           <br />
           רחוב יפת 23
@@ -37,16 +39,25 @@ function Contact() {
             <FontAwesomeIcon icon={faFacebookSquare} />
           </a>
         </div>
-
-        <button type="button" className="send" onClick={() => setIsOpen(true)}>
-          <FontAwesomeIcon icon={faPaperPlane} className="icon" />
-          <div className="contact-symbol-img">
-            <div> צור קשר</div>
-            <img src={image} alt="secretary" className="secretary-img" />
-          </div>
-        </button>
+        <div className="contact-part">
+          <button
+            type="button"
+            className="send"
+            onClick={() => setIsOpen(true)}
+          >
+            <FontAwesomeIcon icon={faPaperPlane} className="icon" />
+            <div className="contact-symbol-img">
+              <div> צור קשר</div>
+              <img src={image} alt="secretary" className="secretary-img" />
+            </div>
+          </button>
+          <Modal
+            id="modal"
+            open={isOpen}
+            onClose={() => setIsOpen(false)}
+          ></Modal>
+        </div>
       </div>
-      <Modal id="modal" open={isOpen} onClose={() => setIsOpen(false)}></Modal>
     </Container>
   );
 }

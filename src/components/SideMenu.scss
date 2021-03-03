@@ -1,7 +1,13 @@
+img {
+  width: 150px;
+  float: right;
+}
+
 ul {
-  direction: rtl;
+  text-align: right;
 
   li {
     list-style: none;
+    padding-bottom: 10px;
   }
 }

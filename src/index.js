@@ -8,5 +8,6 @@ export { default as Contact } from "./components/pages/Contact";
 export { default as Forum } from "./components/pages/Forum";
 export { default as Footer } from "./components/Footer.js";
 export { default as Galery } from "./components/pages/Galery";
+export { default as SideMenu } from "./components/SideMenu";
 
 ReactDOM.render(<App />, document.getElementById("root"));
