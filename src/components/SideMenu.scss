@@ -1,13 +1,34 @@
-img {
-  width: 150px;
-  float: right;
-}
+@import "../utilities/_variables";
 
-ul {
-  text-align: right;
-
-  li {
-    list-style: none;
-    padding-bottom: 10px;
+.side-menu {
+  position: relative;
+  top: 100px;
+  right: 50px;
+  img {
+    width: 208px;
+    float: right;
   }
+  .list {
+    float: right;
+    position: absolute;
+    right: -18px;
+    width: 300px;
+  }
+  ul {
+    text-align: right;
+
+    li {
+      cursor: pointer;
+      list-style: none;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      a {
+        text-decoration: none;
+        color: $text;
+      }
+    }
+  }
+}
+.webviewer {
+  height: 100vh;
 }

@@ -4,7 +4,6 @@ import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { Container } from "react-bootstrap";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import "./Contact.scss";
-
 import Modal from "../Modal";
 import image from "../../images/secretary.png";
 

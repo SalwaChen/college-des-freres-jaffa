@@ -2,7 +2,6 @@ import React from "react";
 import "./About.scss";
 import image from "../../images/about-us.png";
 import { Container } from "react-bootstrap";
-// import image2 from "../../images/home.png";
 
 function About() {
   const SIZE = {

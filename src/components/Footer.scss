@@ -1,7 +1,9 @@
 @import "../utilities/_variables";
 
 .footer-comp {
-  height: 120px;
+  background-color: lighten($background, 7%);
+  opacity: 0.7;
+  height: 80px;
   position: fixed;
   display: flex;
   justify-content: center;

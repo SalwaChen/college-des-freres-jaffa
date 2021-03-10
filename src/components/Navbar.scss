@@ -32,9 +32,15 @@
   .fa-nav {
     display: none;
   }
+  .nav-links {
+    margin: 0 10px;
+  }
 }
 @media only screen and (max-width: 518px) {
   .nav-links {
     display: block;
+  }
+  .cont-nav {
+    margin-top: 20px;
   }
 }
