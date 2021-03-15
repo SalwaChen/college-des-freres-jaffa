@@ -2,6 +2,11 @@
 
 // @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 // @import "./utilities/_variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
   width: 100%;

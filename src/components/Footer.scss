@@ -1,9 +1,11 @@
 @import "../utilities/_variables";
 
 .footer-comp {
-  background-color: lighten($background, 7%);
-  opacity: 0.7;
-  height: 80px;
+  // background-color: lighten($background, 7%);
+  background-color: #5b78c7;
+  font-weight: 500;
+  opacity: 0.8;
+  height: 11vh;
   position: fixed;
   display: flex;
   justify-content: center;

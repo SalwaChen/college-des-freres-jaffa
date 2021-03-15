@@ -6,9 +6,7 @@ import { SideMenu } from "../../index";
 function Home() {
   return (
     <div>
-      <Container>
-        <SideMenu />
-      </Container>
+      <Container>{/* <SideMenu /> */}</Container>
     </div>
   );
 }

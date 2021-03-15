@@ -10,7 +10,7 @@ function Modal({ children, open, onClose }) {
   const [clicked, setClicked] = useState(false);
   const [fade, setFade] = useState(true);
 
-  // NOTES: findout how to restore state to previous stage after animation is done; how to delete the prerefilled fields on the modal; how to click on window to close modal; how to close modal when mail is sent (maybe css animation of a paper being sent)
+  // NOTES: findout how to restore state to previous stage after animation is done; how to delete the prerefilled fields on the modal; how to click on window to close modal; how to close modal when mail is sent (maybe css animation of a paper being sent) alsoooooooooo put pop up when field is incorrect
 
   function handleSubmit(e) {
     e.preventDefault();

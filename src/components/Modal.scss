@@ -7,7 +7,7 @@
   top: 50%;
   left: 50%;
   height: 520px;
-  background-color: $primary;
+  background-color: $background;
   transform: translate(-50%, -50%);
   padding: 20px;
   z-index: 1000;
@@ -22,11 +22,22 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
 }
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fbfbfb inset;
+}
+input:-webkit-autofill:first-line {
+  color: $lightBlue;
+}
+input,
+.area {
+  border: 2px solid black;
+  border-radius: 10px;
+  color: $lightBlue;
+}
 .area {
   background-color: "white";
   width: 300px;
   padding: 8px;
-  border: 1px solid gray;
   font-family: "Varela Round", sans-serif;
 }
 
@@ -60,9 +71,10 @@
 .close-text {
   position: relative;
   top: 50px;
-  color: $tertiary;
+  color: $yellow;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.8em;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: all 0.3s ease-in;
@@ -70,11 +82,11 @@
 }
 .close-container:hover .leftright {
   transform: rotate(-45deg);
-  background-color: $yellow;
+  background-color: $lightBlue;
 }
 .close-container:hover .rightleft {
   transform: rotate(45deg);
-  background-color: $yellow;
+  background-color: $lightBlue;
 }
 .close-container:hover label {
   opacity: 1;
@@ -96,15 +108,16 @@
   height: 36px;
   border-radius: 18px;
   background-color: $text;
-  border: solid 1px transparent;
+  border: solid 2px black;
   color: black;
   font-size: 20px;
   font-weight: 900;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   &:hover {
-    background-color: $yellow;
-    border-color: $text;
+    background-color: $lightBlue;
+    border: solid 2px black;
+    // border-color: $text;
     transition: all 0.1s ease-in-out;
   }
 }
@@ -117,7 +130,7 @@
   background: transparent;
   margin: 30px auto 0 auto;
   border: solid 2px #424242;
-  border-top: solid 2px $tertiary;
+  border-top: solid 2px $yellow;
   border-radius: 50%;
   opacity: 0;
 }
@@ -168,11 +181,11 @@
   85% {
     opacity: 1;
     transform: rotate(1080deg);
-    border-color: $tertiary;
+    border-color: $yellow;
   }
   100% {
     opacity: 1;
     transform: rotate(1080deg);
-    border-color: $tertiary;
+    border-color: $yellow;
   }
 }
