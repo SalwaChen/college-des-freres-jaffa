@@ -11,7 +11,7 @@ import {
   faAddressCard,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
-import logo from "../images/star-vector.png";
+import logo from "../images/logo.jpg";
 
 function Navbar() {
   function handleClick(e) {
@@ -60,7 +60,7 @@ function Navbar() {
           activeClassName="main-nav-active">
           אירועים
         </NavLink> */}
-          <NavLink
+          {/* <NavLink
             exact
             to="/forum"
             className="nav-links"
@@ -68,7 +68,7 @@ function Navbar() {
           >
             <FontAwesomeIcon className="fa-nav" icon={faComments} />
             פורום
-          </NavLink>
+          </NavLink> */}
           <NavLink
             exact
             to="/contact"

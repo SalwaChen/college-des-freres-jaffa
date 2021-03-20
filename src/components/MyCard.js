@@ -1,12 +1,12 @@
 import React from "react";
 import {
   Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardLink,
+  // CardImg,
+  // CardText,
+  // CardBody,
+  // CardTitle,
+  // CardSubtitle,
+  // CardLink,
 } from "reactstrap";
 
 function MyCard({ src, alt }) {

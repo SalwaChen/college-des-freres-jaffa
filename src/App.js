@@ -28,9 +28,9 @@ function App() {
         <Route path="/galery">
           <Galery />
         </Route>
-        <Route path="/forum">
-          <Forum />
-        </Route>
+        {/* <Route path="/forum">
+          <Forum /> 
+        {/* </Route> */}
         <Route path="/contact">
           <Contact />
         </Route>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import Carousel from "react-elastic-carousel";
-import MyCard from "../MyCard.js";
+// import Carousel from "react-elastic-carousel";
+// import MyCard from "../MyCard.js";
 import "./StylePages.scss";
 
 const breakPoints = [

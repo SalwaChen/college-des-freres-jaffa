@@ -28,7 +28,10 @@ function Footer() {
                   rel="noopener noreferrer"
                   className="social-icons"
                 >
-                  <FontAwesomeIcon icon={faInstagram} className="fa" />
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="fa instagram"
+                  />
                 </a>
               </li>
               <li>
@@ -38,7 +41,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   className="social-icons"
                 >
-                  <FontAwesomeIcon icon={faFacebook} className="fa" />
+                  <FontAwesomeIcon icon={faFacebook} className="fa facebook" />
                 </a>
               </li>
               <li>
@@ -48,7 +51,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   className="social-icons"
                 >
-                  <FontAwesomeIcon icon={faYoutube} className="fa" />
+                  <FontAwesomeIcon icon={faYoutube} className="fa youtube" />
                 </a>
               </li>
             </ul>

@@ -1,0 +1,73 @@
+@import "../../utilities/_variables";
+
+.side-menu-cont {
+  font-size: 1.2rem;
+  background-color: lighten($background, 7%);
+  border-radius: 6px;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 5%;
+  display: flex;
+}
+.side-menu-content {
+  position: relative;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+select {
+  float: right;
+  padding: 8px 12px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+}
+.side-menu {
+  position: relative;
+  width: 205px;
+  height: 330px;
+
+  img {
+    position: absolute;
+    width: 205px;
+    height: 330px;
+    top: 0;
+    left: 0;
+  }
+  .list {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 205px;
+    height: 330px;
+  }
+  ul {
+    text-align: right;
+    margin-top: 10px;
+    li {
+      cursor: pointer;
+      list-style: none;
+      padding-bottom: 13px;
+      a {
+        text-decoration: none;
+        color: $text;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .side-menu-cont {
+    align-items: center;
+    flex-direction: column;
+  }
+  select {
+    margin-top: 20px;
+  }
+}

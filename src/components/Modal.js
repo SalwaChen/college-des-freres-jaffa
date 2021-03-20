@@ -1,16 +1,21 @@
-import { React, useState } from "react";
+import { React, useState, useRef } from "react";
 import ReactDom from "react-dom";
 import "./Modal.scss";
 import { Container } from "react-bootstrap";
 
-function Modal({ children, open, onClose }) {
+function Modal({ children, isOpen, setIsOpen, onClose }) {
   const [email, setEmail] = useState("");
   const [textarea, setTextarea] = useState("");
   const [name, setName] = useState("");
   const [clicked, setClicked] = useState(false);
   const [fade, setFade] = useState(true);
+  const modalRef = useRef();
 
   // NOTES: findout how to restore state to previous stage after animation is done; how to delete the prerefilled fields on the modal; how to click on window to close modal; how to close modal when mail is sent (maybe css animation of a paper being sent) alsoooooooooo put pop up when field is incorrect
+
+  function closeModal(e) {
+    if (modalRef.current === e.target) setIsOpen(false);
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -19,19 +24,20 @@ function Modal({ children, open, onClose }) {
     const test = regex.test(String(email).toLowerCase());
     //&& name.length & textarea.length
     if (test && name.length && textarea.length) {
-      console.log(name.length, textarea.length);
-      console.log("CORRECT");
       setClicked(true);
+      window.setTimeout(() => {
+        onClose();
+      }, 5000);
     } else {
       console.log("INCORRECT");
     }
   }
-  if (!open) return null;
+  if (!isOpen) return null;
 
   return ReactDom.createPortal(
     <>
       <Container>
-        <div id="noModal">
+        <div id="noModal" ref={modalRef} onClick={closeModal}>
           <div id="modal">
             <div className="close-container" onClick={onClose}>
               <div className="leftright"></div>
@@ -74,13 +80,13 @@ function Modal({ children, open, onClose }) {
                   className={`loader ${clicked ? "active" : ""}`}
                   onAnimationEnd={() => {
                     setFade(false);
-                    // if (clicked) setTimeout(onClose(), 30000);
+                    // if (clicked) setTimeout(onClose(), 6000);
                   }}
                 >
                   <div
                     className={`check ${fade && clicked ? "" : "active"}`}
                     onAnimationEnd={() => {
-                      if (clicked) setTimeout(onClose(), 3000);
+                      // if (clicked) setTimeout(onClose(), 3000);
                     }}
                   >
                     <span className="check-one"></span>

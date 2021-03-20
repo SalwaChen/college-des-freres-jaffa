@@ -1,9 +1,5 @@
-// ------------ CONTACT PAGE ---------------
 @import "../../utilities/_variables";
 
-body {
-  background-color: $background;
-}
 .cont-contact {
   background-color: lighten($background, 7%);
   border-radius: 6px;
@@ -22,21 +18,21 @@ body {
 .contact-part {
 }
 .fb-icon {
-  color: $yellow;
+  color: #2772aeff;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
 }
 .send {
   background-color: inherit;
   cursor: pointer;
   border: none;
-  color: white;
+  color: $text;
   margin: 50px;
   div {
     color: $text;
   }
   .icon {
-    color: $yellow;
+    color: #fcbd35ff;
     height: 80px;
     width: 80px;
   }
@@ -50,3 +46,40 @@ body {
     flex-direction: column;
   }
 }
+
+//----------MODAL ANIMATION ---------
+// .out {
+//   transform:scale(1);
+//   animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//   .modal-background {
+//     .modal {
+//       animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//     }
+//   }
+// }
+// .send {
+//   transform:scale(1);
+//   .modal-background {
+//     background:rgba(0,0,0,.0);
+//     animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//     .modal {
+//       opacity:0;
+//       animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//     }
+//   }
+//   + .content {
+//     animation: scaleBack .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//   }
+//   &.out {
+//     animation: quickScaleDown 0s .5s linear forwards;
+//     .modal-background {
+//       animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//       .modal {
+//          animation: scaleDown .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//       }
+//     }
+//     + .content {
+//       animation: scaleForward .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+//     }
+//   }
+// }

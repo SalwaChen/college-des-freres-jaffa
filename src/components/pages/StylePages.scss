@@ -4,7 +4,6 @@ body {
   background-color: $background;
 }
 * {
-  font-size: 20px;
   direction: rtl;
 }
 
@@ -13,9 +12,12 @@ body {
 }
 //-------------- FORUM PAGE -------------
 .forum-page {
-  background-color: #fff;
-  img {
-    width: 50%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .chat-image {
+    width: 60%;
     height: auto;
   }
 }

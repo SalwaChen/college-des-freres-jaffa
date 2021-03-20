@@ -1,0 +1,29 @@
+@import "../../utilities/_variables";
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+
+  thead tr {
+    background-color: $blue;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  th,
+  td {
+    padding: 3px 6px;
+  }
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+    &:nth-of-type(even) {
+      border-bottom: 2px solid $blue;
+    }
+  }
+}

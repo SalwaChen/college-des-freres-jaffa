@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import "./Contact.scss";
 import Modal from "../Modal";
+
 import image from "../../images/secretary.png";
 
 function Contact() {
@@ -41,7 +42,7 @@ function Contact() {
         <div className="contact-part">
           <button
             type="button"
-            className="send"
+            className="send out"
             onClick={() => setIsOpen(true)}
           >
             <FontAwesomeIcon icon={faPaperPlane} className="icon" />
@@ -52,9 +53,16 @@ function Contact() {
           </button>
           <Modal
             id="modal"
-            open={isOpen}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
             onClose={() => setIsOpen(false)}
           ></Modal>
+          {/*-------TEST----------*/}
+          {/* <Test
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            onClose={() => setIsOpen(false)}
+          /> */}
         </div>
       </div>
     </Container>

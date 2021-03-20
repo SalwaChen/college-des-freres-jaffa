@@ -1,12 +1,14 @@
 import React from "react";
 import "./StylePages.scss";
-import { Container, Col, Row } from "react-bootstrap";
-import { SideMenu } from "../../index";
+import { Container } from "react-bootstrap";
+import SideMenu from "../sidemenu/SideMenu";
 
 function Home() {
   return (
     <div>
-      <Container>{/* <SideMenu /> */}</Container>
+      <Container>
+        <SideMenu />
+      </Container>
     </div>
   );
 }

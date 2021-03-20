@@ -2,9 +2,10 @@
 
 .footer-comp {
   // background-color: lighten($background, 7%);
-  background-color: #5b78c7;
+  border-top: 2px solid gray;
+  background-color: $background;
   font-weight: 500;
-  opacity: 0.8;
+  opacity: 0.9;
   height: 11vh;
   position: fixed;
   display: flex;
@@ -13,7 +14,7 @@
   bottom: 0;
 }
 div {
-  color: white;
+  color: $text;
 }
 .social-menu {
   list-style: none;
@@ -22,7 +23,16 @@ div {
     margin-left: 20px;
   }
   .fa {
-    font-size: 2rem;
-    color: $yellow;
+    font-size: 3rem;
+    // color: $yellow;
   }
+}
+.facebook {
+  color: #2772aeff;
+}
+.instagram {
+  color: #fcbd35ff;
+}
+.youtube {
+  color: #e92d86ff;
 }

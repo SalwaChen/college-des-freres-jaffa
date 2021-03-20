@@ -26,16 +26,16 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #fbfbfb inset;
 }
 input:-webkit-autofill:first-line {
-  color: $lightBlue;
+  color: $blue;
 }
 input,
 .area {
   border: 2px solid black;
   border-radius: 10px;
-  color: $lightBlue;
+  color: $blue;
 }
 .area {
-  background-color: "white";
+  background-color: white;
   width: 300px;
   padding: 8px;
   font-family: "Varela Round", sans-serif;
@@ -82,11 +82,11 @@ input,
 }
 .close-container:hover .leftright {
   transform: rotate(-45deg);
-  background-color: $lightBlue;
+  background-color: $blue;
 }
 .close-container:hover .rightleft {
   transform: rotate(45deg);
-  background-color: $lightBlue;
+  background-color: $blue;
 }
 .close-container:hover label {
   opacity: 1;
@@ -115,7 +115,7 @@ input,
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   &:hover {
-    background-color: $lightBlue;
+    background-color: $blue;
     border: solid 2px black;
     // border-color: $text;
     transition: all 0.1s ease-in-out;
