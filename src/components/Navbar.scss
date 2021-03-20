@@ -58,6 +58,9 @@
 
 @media screen and (max-width: 768px) {
   .logo {
+    // display: none;
+    height: 40px;
+    width: 40px;
     position: absolute;
     left: 5%;
     top: 50%;
