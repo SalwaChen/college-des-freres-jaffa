@@ -1,6 +1,7 @@
 @import "../utilities/_variables";
 
 .logo {
+  position: relative;
   height: 120px;
   width: 120px;
 }
@@ -19,6 +20,9 @@
   align-items: center;
   margin-left: auto;
 }
+.hebrew {
+  direction: rtl;
+}
 .nav-links {
   height: 40px;
   color: $text;
@@ -29,6 +33,7 @@
     color: $text;
   }
 }
+
 .nav-links:after {
   content: "";
   display: block;
@@ -47,6 +52,8 @@
     margin-left: 5px;
     display: inline-block;
     color: #e92d86ff;
+  }
+  .fa-nav-hebrew {
   }
 }
 .burger-icon-container {

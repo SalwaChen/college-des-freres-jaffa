@@ -1,6 +1,8 @@
 import { React, useState } from "react";
 import "./App.scss";
 import "./components/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import {
   Navbar,
   Home,
@@ -15,12 +17,22 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  const [language, setLanguage] = useState("fr");
   return (
     <Router>
-      <Navbar />
+      <div className="dropdown">
+        <FontAwesomeIcon className="fa-globe dropbtn" icon={faGlobe} />
+        <ul className="dropdown-content">
+          <li onClick={() => setLanguage("fr")}>Français</li>
+          <li onClick={() => setLanguage("he")}>עברית</li>
+          <li onClick={() => setLanguage("en")}>English</li>
+        </ul>
+      </div>
+
+      <Navbar language={language} />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home language={language} />
         </Route>
         <Route path="/about">
           <About />
@@ -35,7 +47,7 @@ function App() {
           <Contact />
         </Route>
       </Switch>
-      <Footer />
+      <Footer language={language} />
     </Router>
   );
 }

@@ -36,3 +36,21 @@ div {
 .youtube {
   color: #e92d86ff;
 }
+@media screen and (max-width: 1080px) {
+  .footer-comp {
+    display: block;
+    position: relative;
+  }
+  //   font-size: 10px;
+  // }
+  // .social-menu {
+  //   list-style: none;
+  //   display: flex;
+  //   a {
+  //     margin-left: 10px;
+  //   }
+  //   .fa {
+  //     font-size: 1rem;
+  //   }
+  // }
+}

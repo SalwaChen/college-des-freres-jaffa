@@ -1,6 +1,12 @@
 import React from "react";
 const Welcome = () => {
-  return <div>Wellcome</div>;
+  return (
+    <div>
+      <h1>Welcome</h1>
+      <h1>Bienvenue</h1>
+      <h1>ברוכים הבאים</h1>
+    </div>
+  );
 };
 
 export default Welcome;

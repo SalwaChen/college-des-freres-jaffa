@@ -2,7 +2,6 @@ import { React } from "react";
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Container } from "react-bootstrap";
 import {
   faHome,
   faComments,
@@ -11,12 +10,33 @@ import {
   faAddressCard,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
+import { Container } from "react-bootstrap";
 import logo from "../images/logo.jpg";
 
-function Navbar() {
+function Navbar(p) {
   function handleClick(e) {
     document.querySelector(".navbar-container").classList.toggle("open");
     console.log(document.querySelector(".navbar").classList);
+  }
+  let home,
+    about,
+    galery,
+    contact = "";
+  if (p.language === "fr") {
+    home = "Acceuil";
+    about = "A propos";
+    galery = "Galerie";
+    contact = "Contact";
+  } else if (p.language === "he") {
+    home = "דף הבית";
+    about = "אודות";
+    galery = "גלריה";
+    contact = "צור קשר";
+  } else if (p.language === "en") {
+    home = "Home";
+    about = "About";
+    galery = "Galery";
+    contact = "Contact";
   }
   return (
     <div className="cont-nav">
@@ -28,7 +48,7 @@ function Navbar() {
         <div onClick={handleClick} className="burger-icon-container">
           <FontAwesomeIcon icon={faBars} />
         </div>
-        <div className="navbar-container">
+        <div className={`navbar-container ${p.language === "he" && "hebrew"}`}>
           <NavLink
             exact
             to="/"
@@ -36,7 +56,7 @@ function Navbar() {
             activeClassName="main-nav-active"
           >
             <FontAwesomeIcon className="fa-nav" icon={faHome} />
-            דף הבית
+            {home}
           </NavLink>
           <NavLink
             exact
@@ -45,7 +65,7 @@ function Navbar() {
             activeClassName="main-nav-active"
           >
             <FontAwesomeIcon className="fa-nav" icon={faAddressCard} />
-            אודות
+            {about}
           </NavLink>
           <NavLink
             exact
@@ -54,7 +74,7 @@ function Navbar() {
             activeClassName="main-nav-active"
           >
             <FontAwesomeIcon className="fa-nav" icon={faImages} />
-            גלריה
+            {galery}
           </NavLink>
           {/* <NavLink exact to="/events" className="nav-links"
           activeClassName="main-nav-active">
@@ -76,7 +96,7 @@ function Navbar() {
             activeClassName="main-nav-active"
           >
             <FontAwesomeIcon className="fa-nav" icon={faEnvelope} />
-            צרו קשר
+            {contact}
           </NavLink>
           {/* <div className="animation start-home"></div> */}
         </div>

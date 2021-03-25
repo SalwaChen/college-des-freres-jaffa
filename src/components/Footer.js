@@ -11,13 +11,26 @@ import {
 import "./Footer.scss";
 import { Container, Row, Col } from "reactstrap";
 
-function Footer() {
+function Footer(p) {
+  console.log(p.language);
+  let location,
+    contact = "";
+  if (p.language === "he") {
+    location = "רחוב יפת 23, תל-אביב יפו";
+    contact = "צור קשר";
+  } else if (p.language === "fr") {
+    location = "Rue Yeffet 23, Tel-aviv Jaffa";
+    contact = "Contactez-nous";
+  } else if (p.language === "en") {
+    location = "St. Yefet 23, Tel-aviv Yafo";
+    contact = "Contact us";
+  }
   return (
     <Container fluid className="footer-comp">
       <div>
         <Row>
           <Col>
-            <div className="text-center">רחוב יפת 23, תל-אביב יפו</div>
+            <div className="text-center">{location}</div>
           </Col>
           <Col>
             <ul className="social-menu">
@@ -57,8 +70,10 @@ function Footer() {
             </ul>
           </Col>
           <Col className="text-center">
-            <div>צרו קשר</div>
-            <div> 03-6821890</div>
+            <div>
+              {contact}
+              <div>03-6821890</div>
+            </div>
           </Col>
         </Row>
       </div>

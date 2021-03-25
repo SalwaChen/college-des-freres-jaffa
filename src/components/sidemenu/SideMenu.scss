@@ -16,6 +16,9 @@
   justify-content: center;
   margin: auto;
 }
+.hebrew {
+  text-align: right;
+}
 select {
   float: right;
   padding: 8px 12px;
@@ -48,7 +51,8 @@ select {
     height: 330px;
   }
   ul {
-    text-align: right;
+    //---- UNCOMMENT FOR HEBREW -----
+    // text-align: right;
     margin-top: 10px;
     li {
       cursor: pointer;
