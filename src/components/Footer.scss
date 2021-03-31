@@ -2,11 +2,11 @@
 
 .footer-comp {
   // background-color: lighten($background, 7%);
-  border-top: 2px solid gray;
+  border-top: 1px solid gray;
   background-color: $background;
   font-weight: 500;
-  opacity: 0.9;
-  height: 11vh;
+  opacity: 0.7;
+  height: 142px;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ div {
   list-style: none;
   display: flex;
   a {
-    margin-left: 20px;
+    margin-left: 5px;
   }
   .fa {
     font-size: 3rem;
@@ -38,8 +38,8 @@ div {
 }
 @media screen and (max-width: 1080px) {
   .footer-comp {
-    display: block;
-    position: relative;
+    // display: block;
+    // position: relative;
   }
   //   font-size: 10px;
   // }

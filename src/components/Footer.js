@@ -1,10 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import logo from "../images/star-vector.png";
 
 import {
   faInstagram,
-  // faFacebookSquare,
   faYoutube,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
@@ -12,7 +10,6 @@ import "./Footer.scss";
 import { Container, Row, Col } from "reactstrap";
 
 function Footer(p) {
-  console.log(p.language);
   let location,
     contact = "";
   if (p.language === "he") {

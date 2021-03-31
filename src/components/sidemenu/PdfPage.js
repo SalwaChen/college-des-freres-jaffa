@@ -1,13 +1,7 @@
-import React, {
-  useRef,
-  //  useEffect,
-  //   useCallback
-} from "react";
-// import { useSpring, animated } from "react-spring";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 import "./PdfPage.scss";
-// import ReglementHebreu from "../ReglementHebreu";
 
 const CloseModalButton = styled(MdClose)`
   cursor: pointer;
@@ -38,8 +32,6 @@ function PdfPage({ showModal, setShowModal, id }) {
             onClick={() => setShowModal(false)}
           />
           <embed src={`./documents/${id}.pdf`} className="pdf" />
-
-          {/* <ReglementHebreu className="pdf" /> */}
         </div>
       ) : null}
     </>

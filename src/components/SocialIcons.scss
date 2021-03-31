@@ -2,31 +2,20 @@
 @import "../utilities/_variables";
 
 .social-menu {
-  position: absolute;
-  top: 180px;
-  left: 25%;
   li {
     list-style: none;
-    margin: 0 15px;
+    margin: 0 8px;
   }
 }
-.fa {
-  font-size: 30px;
-  position: relative;
-  margin-top: 15px;
-  line-height: 60px;
+.faIcons {
+  font-size: 2.5rem;
   transition: 0.6s;
-  color: $yellow;
+  color: $light-blue;
 }
-.social-icons {
+.social-icons-cont {
   position: relative;
-  margin-left: 30%;
   display: block;
-  width: 60px;
-  height: 60px;
-  background-color: $lightWhite;
-  border: 1px solid $secondary;
-  border-radius: 50%;
+  background-color: white;
   text-align: center;
   transition: 0.6s;
   margin-top: 15px;

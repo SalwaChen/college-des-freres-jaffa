@@ -9,7 +9,15 @@ body {
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
   padding: 25px;
-  margin-top: 8%;
+  // margin-top: 8%;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+  &:after {
+    content: "";
+    display: block;
+    height: 142px;
+  }
 }
 .text {
   width: 75%;

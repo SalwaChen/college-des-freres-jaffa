@@ -19,9 +19,9 @@ function SocialIcons() {
             href="https://www.instagram.com/college.desfreres.jaffa/?hl=fr"
             target="_blank"
             rel="noopener noreferrer"
-            className="social-icons"
+            className="social-icons-cont"
           >
-            <FontAwesomeIcon icon={faInstagram} className="fa" />
+            <FontAwesomeIcon icon={faInstagram} className="faIcons" />
           </a>
         </li>
         <li>
@@ -29,9 +29,9 @@ function SocialIcons() {
             href="https://www.facebook.com/groups/828828680554815"
             target="_blank"
             rel="noopener noreferrer"
-            className="social-icons"
+            className="social-icons-cont"
           >
-            <FontAwesomeIcon icon={faFacebook} className="fa" />
+            <FontAwesomeIcon icon={faFacebook} className="faIcons" />
           </a>
         </li>
         <li>
@@ -39,9 +39,9 @@ function SocialIcons() {
             href="https://www.youtube.com/channel/UCLROYlZCVurSBlfmLiU8sAg/videos"
             target="_blank"
             rel="noopener noreferrer"
-            className="social-icons"
+            className="social-icons-cont"
           >
-            <FontAwesomeIcon icon={faYoutube} className="fa" />
+            <FontAwesomeIcon icon={faYoutube} className="faIcons" />
           </a>
         </li>
       </ul>

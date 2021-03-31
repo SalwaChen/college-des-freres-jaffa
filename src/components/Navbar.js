@@ -1,30 +1,49 @@
-import { React } from "react";
+import { React, useState, useEffect } from "react";
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
-  faComments,
   faEnvelope,
   faImages,
   faAddressCard,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
-import { Container } from "react-bootstrap";
-import logo from "../images/logo.jpg";
+import { faWindowClose } from "@fortawesome/free-regular-svg-icons";
+import logo from "../images/logo-png.png";
 
 function Navbar(p) {
+  const [windowSize, setWindowSize] = useState(0);
   function handleClick(e) {
-    document.querySelector(".navbar-container").classList.toggle("open");
-    console.log(document.querySelector(".navbar").classList);
+    document.querySelector(".navbar-container").style.width = "280px";
+    document.querySelector(".burger-icon-container").left = "200px";
+    document.querySelector(".navbar-container").classList.add("transition");
   }
+  function handleClose() {
+    document.querySelector(".navbar-container").style.width = "0";
+    document.querySelector(".navbar-container").classList.remove("transition");
+  }
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 769) {
+        setWindowSize(window.innerWidth);
+        document.querySelector(".navbar-container").style.width = "550px";
+      } else {
+        document.querySelector(".navbar-container").style.width = "0";
+        document
+          .querySelector(".navbar-container")
+          .classList.add("navbar-container-he");
+      }
+    });
+  }, [windowSize]);
+
   let home,
     about,
     galery,
     contact = "";
   if (p.language === "fr") {
     home = "Acceuil";
-    about = "A propos";
+    about = "À propos";
     galery = "Galerie";
     contact = "Contact";
   } else if (p.language === "he") {
@@ -40,19 +59,28 @@ function Navbar(p) {
   }
   return (
     <div className="cont-nav">
-      {/* <SocialIcons /> */}
-      <nav className="navbar">
+      <div className={`cont-logo ${p.language === "he" && "logo-he"}`}>
         <NavLink exact to="/">
-          <img src={logo} className="logo" alt="Logo" />
+          <img src={logo} alt="Logo" className="logo" />
         </NavLink>
-        <div onClick={handleClick} className="burger-icon-container">
-          <FontAwesomeIcon icon={faBars} />
-        </div>
+      </div>
+      <div onClick={handleClick} className="burger-icon-container">
+        <FontAwesomeIcon icon={faBars} />
+      </div>
+      <nav className="navbar">
         <div className={`navbar-container ${p.language === "he" && "hebrew"}`}>
+          <FontAwesomeIcon
+            icon={faWindowClose}
+            className="fa-close"
+            onClick={handleClose}
+          />
+          <NavLink exact to="/">
+            <FontAwesomeIcon icon={faHome} className="fa-home" />
+          </NavLink>
           <NavLink
             exact
             to="/"
-            className="nav-links"
+            className="nav-links home"
             activeClassName="main-nav-active"
           >
             <FontAwesomeIcon className="fa-nav" icon={faHome} />
@@ -61,7 +89,7 @@ function Navbar(p) {
           <NavLink
             exact
             to="/about"
-            className="nav-links"
+            className="nav-links about"
             activeClassName="main-nav-active"
           >
             <FontAwesomeIcon className="fa-nav" icon={faAddressCard} />
@@ -70,7 +98,7 @@ function Navbar(p) {
           <NavLink
             exact
             to="/galery"
-            className="nav-links"
+            className="nav-links galery"
             activeClassName="main-nav-active"
           >
             <FontAwesomeIcon className="fa-nav" icon={faImages} />
@@ -92,7 +120,7 @@ function Navbar(p) {
           <NavLink
             exact
             to="/contact"
-            className="nav-links"
+            className="nav-links contact"
             activeClassName="main-nav-active"
           >
             <FontAwesomeIcon className="fa-nav" icon={faEnvelope} />

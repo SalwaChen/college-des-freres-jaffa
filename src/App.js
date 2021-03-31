@@ -35,7 +35,7 @@ function App() {
           <Home language={language} />
         </Route>
         <Route path="/about">
-          <About />
+          <About language={language} />
         </Route>
         <Route path="/galery">
           <Galery />
@@ -44,7 +44,7 @@ function App() {
           <Forum /> 
         {/* </Route> */}
         <Route path="/contact">
-          <Contact />
+          <Contact language={language} />
         </Route>
       </Switch>
       <Footer language={language} />

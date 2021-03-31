@@ -7,10 +7,29 @@ body {
   // ---- UNCOMMENT TO CHANGE TO HEBREW -----
   // direction: rtl;
 }
-
-// --------------- HOME PAGE ------------------
-.home-page {
+//---------------- GALERY PAGE ---------------
+.galery-cont {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+  &:after {
+    content: "";
+    display: block;
+    height: 142px;
+  }
 }
+// --------------- HOME PAGE ------------------
+.home-cont {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+  &:after {
+    content: "";
+    display: block;
+    height: 142px;
+  }
+}
+
 //-------------- FORUM PAGE -------------
 .forum-page {
   margin-top: 50px;

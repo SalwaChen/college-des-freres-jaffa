@@ -6,7 +6,7 @@ import SideMenu from "../sidemenu/SideMenu";
 function Home(p) {
   return (
     <div>
-      <Container>
+      <Container className="home-cont">
         <SideMenu p={p.language} />
       </Container>
     </div>

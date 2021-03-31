@@ -43,7 +43,9 @@ function SideMenu(p) {
           <li onClick={handleClick} id="horaires">
             מערכת שעות
           </li>
-          <li>לוח חופשים</li>
+          <li id="vaccances" onClick={openModal}>
+            לוח חופשות
+          </li>
           <li>שעות חופשיות מורים</li>
           <li>מסמכים חשובים</li>
           <li id="reduction-hebreu" onClick={openModal}>
@@ -68,10 +70,12 @@ function SideMenu(p) {
           <li onClick={handleClick} id="horaires">
             Horaires des classes
           </li>
-          <li>Vaccances</li>
+          <li id="vaccances" onClick={openModal}>
+            Vaccances
+          </li>
           <li>Temps Libre - profs</li>
           <li>Documents nécessaires</li>
-          <li id="reduction-hebreu" onClick={openModal}>
+          <li id="reduction" onClick={openModal}>
             Demande de Réduction
           </li>
           <li id="prelevement-hebreu" onClick={openModal}>
@@ -91,9 +95,11 @@ function SideMenu(p) {
             Rules
           </li>
           <li onClick={handleClick} id="horaires">
-            Hours of classes
+            Schedule of classes
           </li>
-          <li>Vacation</li>
+          <li id="vaccances" onClick={openModal}>
+            Vacation
+          </li>
           <li>Teacher's free time</li>
           <li>necessary documents</li>
           <li id="reduction-hebreu" onClick={openModal}>

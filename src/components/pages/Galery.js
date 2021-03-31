@@ -13,7 +13,7 @@ const breakPoints = [
 function Galery() {
   return (
     <div>
-      <Container>
+      <Container className="galery-cont">
         {/* <Carousel breakPoints={breakPoints}>
           <MyCard src={window.location.origin + "/img/1.jpg"} alt="image1" />
           <MyCard src={window.location.origin + "/img/2.jpg"} alt="image2" />
