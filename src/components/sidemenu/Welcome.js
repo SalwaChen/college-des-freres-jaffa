@@ -1,7 +1,7 @@
 import React from "react";
 const Welcome = () => {
   return (
-    <div>
+    <div style={{ marginTop: "30px" }}>
       <h1>Welcome</h1>
       <h1>Bienvenue</h1>
       <h1>ברוכים הבאים</h1>

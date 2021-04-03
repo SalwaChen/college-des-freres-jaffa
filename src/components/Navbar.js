@@ -7,36 +7,10 @@ import {
   faEnvelope,
   faImages,
   faAddressCard,
-  faBars,
 } from "@fortawesome/free-solid-svg-icons";
-import { faWindowClose } from "@fortawesome/free-regular-svg-icons";
-import logo from "../images/logo-png.png";
+import { Container } from "react-bootstrap";
 
 function Navbar(p) {
-  const [windowSize, setWindowSize] = useState(0);
-  function handleClick(e) {
-    document.querySelector(".navbar-container").style.width = "280px";
-    document.querySelector(".burger-icon-container").left = "200px";
-    document.querySelector(".navbar-container").classList.add("transition");
-  }
-  function handleClose() {
-    document.querySelector(".navbar-container").style.width = "0";
-    document.querySelector(".navbar-container").classList.remove("transition");
-  }
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      if (window.innerWidth >= 769) {
-        setWindowSize(window.innerWidth);
-        document.querySelector(".navbar-container").style.width = "550px";
-      } else {
-        document.querySelector(".navbar-container").style.width = "0";
-        document
-          .querySelector(".navbar-container")
-          .classList.add("navbar-container-he");
-      }
-    });
-  }, [windowSize]);
-
   let home,
     about,
     galery,
@@ -58,25 +32,9 @@ function Navbar(p) {
     contact = "Contact";
   }
   return (
-    <div className="cont-nav">
-      <div className={`cont-logo ${p.language === "he" && "logo-he"}`}>
-        <NavLink exact to="/">
-          <img src={logo} alt="Logo" className="logo" />
-        </NavLink>
-      </div>
-      <div onClick={handleClick} className="burger-icon-container">
-        <FontAwesomeIcon icon={faBars} />
-      </div>
+    <Container className="cont-nav">
       <nav className="navbar">
         <div className={`navbar-container ${p.language === "he" && "hebrew"}`}>
-          <FontAwesomeIcon
-            icon={faWindowClose}
-            className="fa-close"
-            onClick={handleClose}
-          />
-          <NavLink exact to="/">
-            <FontAwesomeIcon icon={faHome} className="fa-home" />
-          </NavLink>
           <NavLink
             exact
             to="/"
@@ -129,7 +87,10 @@ function Navbar(p) {
           {/* <div className="animation start-home"></div> */}
         </div>
       </nav>
-    </div>
+      {/* <FontAwesomeIcon icon={faPhone} />
+      <FontAwesomeIcon icon={faMapMarkerAlt} />
+      <SocialIcons /> */}
+    </Container>
   );
 }
 

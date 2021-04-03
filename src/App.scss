@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Raleway, sans-serif;
 }
 body {
   height: 100%;
@@ -15,22 +16,30 @@ body {
     width: 0.5rem;
     height: 0.5rem;
   }
-
   &::-webkit-scrollbar-thumb {
     background: darkslategray;
   }
-
   &::-webkit-scrollbar-track {
     background: #e92d86ff;
   }
-
   // For Internet Explorer
   & {
     scrollbar-face-color: darkslategray;
     scrollbar-track-color: #e92d86ff;
   }
 }
-
+.cont-logo {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  .logo {
+    height: 120px;
+    width: 120px;
+  }
+}
+.logo-right {
+  right: 0;
+}
 .dropdown {
   position: relative;
   top: 0px;
@@ -48,6 +57,7 @@ body {
   position: absolute;
   background-color: white;
   min-width: 160px;
+
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 

@@ -1,0 +1,201 @@
+@import "../utilities/_variables";
+
+.container-side-nav {
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  width: 0;
+  background-color: $dark-blue;
+  height: 100vh;
+  overflow-x: hidden;
+  font-size: 18px;
+  transition: 0.5s;
+  .nav {
+    margin-top: 10vh;
+  }
+}
+.side-right {
+  right: 0;
+  direction: rtl;
+  text-align: right;
+  .fa-close {
+    right: 200px;
+  }
+  .fa-side-home {
+    right: 30px;
+  }
+  .nav {
+    font-weight: 600;
+  }
+}
+.side-nav-link {
+  width: 250px;
+  color: white;
+  text-decoration: none;
+  min-height: 7vh;
+  padding: 8px 8px 8px 32px;
+  display: block;
+  //   transition: 0.3s;
+  //   &:hover {
+  //     color: #f1f1f1;
+  //   }
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+.fa-close {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 200px;
+  font-size: 35px;
+  color: white;
+}
+.fa-side-home {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-size: 35px;
+  color: white;
+}
+.fa-side-nav {
+  display: none;
+}
+
+.burger-icon-container {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  font-size: 50px;
+  color: $dark-blue;
+  top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.burger-right {
+  right: 0;
+}
+.side-galery {
+  background-color: $pink;
+}
+.side-home {
+  background-color: $light-blue;
+}
+.side-about {
+  background-color: $gray-la-salle;
+}
+.side-contact {
+  background-color: $green;
+}
+// side-social-icons {
+//   background-color: $dark-blue;
+//   color: yellow;
+// }
+// .navbar-container {
+//   background-color: $dark-blue;
+//   display: block;
+//   height: 100%;
+//   width: 0;
+//   position: fixed;
+//   z-index: 20;
+//   top: 0;
+//   left: 0;
+//   overflow-x: hidden;
+//   padding-top: 60px;
+// }
+// .transition {
+//   transition: 0.5s;
+// }
+// .navbar-container-he {
+//   right: 0;
+// }
+// .nav-links {
+//   height: 8vh;
+//   padding: 8px 8px 8px 32px;
+//   display: block;
+//   background-color: #111;
+//   color: white;
+//   transition: 0.3s;
+//   font-size: 22px;
+//   font-weight: 500;
+//   // margin-bottom: 10vh;
+//   &:hover {
+//     color: #f1f1f1;
+//   }
+// }
+// .nav-links:after {
+//   display: none;
+// }
+
+// .fa-nav {
+//   margin-right: 10px;
+//   margin-left: 10px;
+// }
+// .main-nav-active {
+//   .fa-nav {
+//     display: none;
+//   }
+// }
+// @media screen and (max-height: 450px) {
+//   .navbar-container {
+//     padding-top: 15px;
+//   }
+//   .nav-links {
+//     font-size: 18px;
+//   }
+// }
+
+// ----- CIRCLE NAVBAR STYLE RESPONSIVE ------
+
+// .logo {
+//   // display: none;
+//   height: 80px;
+//   width: 80px;
+//   position: absolute;
+//   left: 5%;
+//   top: 50%;
+//   transform: translate(-5%, -50%);
+//   z-index: 6;
+// }
+// .main-nav-active {
+//   border-bottom: none;
+//   .fa-nav {
+//     display: none;
+//   }
+// }
+// .navbar {
+//   position: relative;
+// }
+// .burger-icon-container {
+//   display: block;
+//   font-size: 40px;
+//   position: absolute;
+//   cursor: pointer;
+//   right: 5%;
+//   top: 50%;
+//   transform: translate(-5%, -50%);
+//   z-index: 3;
+// }
+
+// .navbar-container {
+//   top: 0px;
+//   left: 0px;
+//   position: fixed;
+//   background: $background;
+//   height: 100vh;
+//   width: 100%;
+//   flex-direction: column;
+//   clip-path: circle(108px at 95% -5%);
+//   -webkit-clip-path: circle(108px at 95% -5%);
+//   transition: all 1s ease-out;
+//   pointer-events: all;
+//   z-index: 2;
+// }
+// .navbar-container.open {
+//   clip-path: circle(1000px at 95% -4%);
+//   -webkit-clip-path: circle(1000px at 95% -4%);
+//   pointer-events: all;
+//   z-index: 2;
+// }

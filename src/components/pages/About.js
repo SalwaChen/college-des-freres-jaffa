@@ -4,7 +4,6 @@ import image from "../../images/about-us.png";
 import { Container } from "react-bootstrap";
 
 function About(p) {
-  console.log(p.language);
   let about = "";
   if (p.language === "he") {
     about = (

@@ -9,6 +9,7 @@
   height: 142px;
   position: fixed;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   bottom: 0;
@@ -20,11 +21,11 @@ div {
   list-style: none;
   display: flex;
   a {
-    margin-left: 5px;
+    // margin-left: 2px;
   }
   .fa {
-    font-size: 3rem;
-    // color: $yellow;
+    font-size: 2.5rem;
+    // color: $gray;
   }
 }
 .facebook {
@@ -35,6 +36,21 @@ div {
 }
 .youtube {
   color: #e92d86ff;
+}
+.phone {
+  color: $dark-blue;
+  font-size: 1.2rem;
+}
+.map {
+  color: $pink;
+  font-size: 1.4rem;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.phone-cont {
+  // background-color: pink;
+  // display: flex;
+  // flex-direction: row-reverse;
 }
 @media screen and (max-width: 1080px) {
   .footer-comp {

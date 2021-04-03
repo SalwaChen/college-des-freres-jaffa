@@ -78,7 +78,7 @@ function Contact(p) {
       <div className="contact-page">
         <div className="text-part">
           {contact}
-          <SocialIcons />
+          <SocialIcons className="contact-social-icons" />
         </div>
         <div className="contact-part">
           <button

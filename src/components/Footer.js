@@ -6,6 +6,8 @@ import {
   faYoutube,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+
+import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.scss";
 import { Container, Row, Col } from "reactstrap";
 
@@ -25,54 +27,57 @@ function Footer(p) {
   return (
     <Container fluid className="footer-comp">
       <div>
-        <Row>
-          <Col>
-            <div className="text-center">{location}</div>
-          </Col>
-          <Col>
-            <ul className="social-menu">
-              <li>
-                <a
-                  href="https://www.instagram.com/college.desfreres.jaffa/?hl=fr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-icons"
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    className="fa instagram"
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/groups/828828680554815"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-icons"
-                >
-                  <FontAwesomeIcon icon={faFacebook} className="fa facebook" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCLROYlZCVurSBlfmLiU8sAg/videos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-icons"
-                >
-                  <FontAwesomeIcon icon={faYoutube} className="fa youtube" />
-                </a>
-              </li>
-            </ul>
-          </Col>
-          <Col className="text-center">
-            <div>
-              {contact}
-              <div>03-6821890</div>
-            </div>
-          </Col>
-        </Row>
+        <div>
+          <div className="text-center">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="fa map" />
+            {location}
+          </div>
+        </div>
+
+        <div>
+          <ul className="social-menu">
+            <li>
+              <a
+                href="https://www.instagram.com/college.desfreres.jaffa/?hl=fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icons"
+              >
+                <FontAwesomeIcon icon={faInstagram} className="fa instagram" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/groups/828828680554815"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icons"
+              >
+                <FontAwesomeIcon icon={faFacebook} className="fa facebook" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCLROYlZCVurSBlfmLiU8sAg/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icons"
+              >
+                <FontAwesomeIcon icon={faYoutube} className="fa youtube" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="phone-cont">
+          <div>
+            <FontAwesomeIcon icon={faPhone} className="fa phone" />
+          </div>
+
+          <div>
+            {contact}
+            <div>03-6821890</div>
+          </div>
+        </div>
       </div>
     </Container>
   );
