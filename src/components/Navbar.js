@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React } from "react";
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faImages,
   faAddressCard,
+  faInfo,
 } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "react-bootstrap";
 
@@ -14,21 +15,25 @@ function Navbar(p) {
   let home,
     about,
     galery,
-    contact = "";
+    contact,
+    infos = "";
   if (p.language === "fr") {
     home = "Acceuil";
     about = "À propos";
     galery = "Galerie";
+    infos = "Infos";
     contact = "Contact";
   } else if (p.language === "he") {
     home = "דף הבית";
     about = "אודות";
     galery = "גלריה";
+    infos = "מידע";
     contact = "צור קשר";
   } else if (p.language === "en") {
     home = "Home";
     about = "About";
     galery = "Galery";
+    infos = "Infos";
     contact = "Contact";
   }
   return (
@@ -55,6 +60,15 @@ function Navbar(p) {
           </NavLink>
           <NavLink
             exact
+            to="/infos"
+            className="nav-links infos"
+            activeClassName="main-nav-active"
+          >
+            <FontAwesomeIcon className="fa-nav" icon={faInfo} />
+            {infos}
+          </NavLink>
+          <NavLink
+            exact
             to="/galery"
             className="nav-links galery"
             activeClassName="main-nav-active"
@@ -62,19 +76,6 @@ function Navbar(p) {
             <FontAwesomeIcon className="fa-nav" icon={faImages} />
             {galery}
           </NavLink>
-          {/* <NavLink exact to="/events" className="nav-links"
-          activeClassName="main-nav-active">
-          אירועים
-        </NavLink> */}
-          {/* <NavLink
-            exact
-            to="/forum"
-            className="nav-links"
-            activeClassName="main-nav-active"
-          >
-            <FontAwesomeIcon className="fa-nav" icon={faComments} />
-            פורום
-          </NavLink> */}
           <NavLink
             exact
             to="/contact"
@@ -84,12 +85,8 @@ function Navbar(p) {
             <FontAwesomeIcon className="fa-nav" icon={faEnvelope} />
             {contact}
           </NavLink>
-          {/* <div className="animation start-home"></div> */}
         </div>
       </nav>
-      {/* <FontAwesomeIcon icon={faPhone} />
-      <FontAwesomeIcon icon={faMapMarkerAlt} />
-      <SocialIcons /> */}
     </Container>
   );
 }

@@ -8,12 +8,12 @@
   margin-top: 5vh;
   min-height: 100%;
   /* equal to footer height */
-  // margin-bottom: -142px;
-  // &:after {
-  //   content: "";
-  //   display: block;
-  //   height: 142px;
-  // }
+  margin-bottom: -142px;
+  &:after {
+    content: "";
+    display: block;
+    height: 142px;
+  }
 }
 .contact-page {
   display: flex;

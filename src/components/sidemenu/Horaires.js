@@ -1,7 +1,9 @@
 import React from "react";
+import "../pages/Infos.scss";
+
 const Horaires = () => {
   function handleChange(e) {
-    console.log(e.target.value);
+    // console.log(e.target.value);
   }
   return (
     <select name="classes" id="classes" onChange={handleChange}>

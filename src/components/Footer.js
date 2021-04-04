@@ -1,13 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   faInstagram,
   faYoutube,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-
-import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
+// import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.scss";
 import { Container, Row, Col } from "reactstrap";
 
@@ -26,16 +24,13 @@ function Footer(p) {
   }
   return (
     <Container fluid className="footer-comp">
-      <div>
-        <div>
-          <div className="text-center">
-            <FontAwesomeIcon icon={faMapMarkerAlt} className="fa map" />
-            {location}
-          </div>
-        </div>
-
-        <div>
-          <ul className="social-menu">
+      <Row>
+        <Col className="contact-us">
+          {/* <FontAwesomeIcon icon={faMapMarkerAlt} className="fa map" /> */}
+          {location}
+        </Col>
+        <Col>
+          <ul className="social-menu-footer">
             <li>
               <a
                 href="https://www.instagram.com/college.desfreres.jaffa/?hl=fr"
@@ -43,7 +38,10 @@ function Footer(p) {
                 rel="noopener noreferrer"
                 className="social-icons"
               >
-                <FontAwesomeIcon icon={faInstagram} className="fa instagram" />
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="fa-footer instagram"
+                />
               </a>
             </li>
             <li>
@@ -53,7 +51,10 @@ function Footer(p) {
                 rel="noopener noreferrer"
                 className="social-icons"
               >
-                <FontAwesomeIcon icon={faFacebook} className="fa facebook" />
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="fa-footer facebook"
+                />
               </a>
             </li>
             <li>
@@ -63,22 +64,24 @@ function Footer(p) {
                 rel="noopener noreferrer"
                 className="social-icons"
               >
-                <FontAwesomeIcon icon={faYoutube} className="fa youtube" />
+                <FontAwesomeIcon
+                  icon={faYoutube}
+                  className="fa-footer youtube"
+                />
               </a>
             </li>
           </ul>
-        </div>
-        <div className="phone-cont">
-          <div>
+        </Col>
+        {/* <div className="phone-cont"> */}
+        {/* <div>
             <FontAwesomeIcon icon={faPhone} className="fa phone" />
-          </div>
-
-          <div>
-            {contact}
-            <div>03-6821890</div>
-          </div>
-        </div>
-      </div>
+          </div> */}
+        <Col className="address">
+          {contact}
+          <div>03-6821890</div>
+        </Col>
+        {/* </div> */}
+      </Row>
     </Container>
   );
 }

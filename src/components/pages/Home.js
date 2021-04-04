@@ -1,15 +1,16 @@
 import React from "react";
 import "./StylePages.scss";
 import { Container } from "react-bootstrap";
-import SideMenu from "../sidemenu/SideMenu";
 
 function Home(p) {
   return (
-    <div>
-      <Container className="home-cont">
-        <SideMenu p={p.language} />
-      </Container>
-    </div>
+    <Container className="home-cont">
+      {/* <div style={{ marginTop: "30px" }}> */}
+      <h1>Welcome</h1>
+      <h1>Bienvenue</h1>
+      <h1>ברוכים הבאים</h1>
+      {/* </div> */}
+    </Container>
   );
 }
 export default Home;

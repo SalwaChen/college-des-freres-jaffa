@@ -1,19 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faEnvelope,
-  faImages,
-  faAddressCard,
-  faBars,
-  faPhone,
-  faMapMarkerAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHome, faBars } from "@fortawesome/free-solid-svg-icons";
 import "./SideNavbar.scss";
 import { faWindowClose } from "@fortawesome/free-regular-svg-icons";
 import SocialIcons from "./SocialIcons";
-import { Container } from "react-bootstrap";
 
 function SideNavbar(p) {
   function handleClick(e) {
@@ -29,21 +20,25 @@ function SideNavbar(p) {
   let home,
     about,
     galery,
-    contact = "";
+    contact,
+    infos = "";
   if (p.language === "fr") {
     home = "Acceuil";
     about = "À propos";
     galery = "Galerie";
+    infos = "Renseignements";
     contact = "Contact";
   } else if (p.language === "he") {
     home = "דף הבית";
     about = "אודות";
     galery = "גלריה";
+    infos = "מידע";
     contact = "צור קשר";
   } else if (p.language === "en") {
     home = "Home";
     about = "About";
     galery = "Galery";
+    infos = "Infos";
     contact = "Contact";
   }
 
@@ -80,7 +75,6 @@ function SideNavbar(p) {
               className="side-nav-link side-home"
               activeClassName="main-side-nav-active"
             >
-              <FontAwesomeIcon className="fa-side-nav" icon={faHome} />
               {home}
             </NavLink>
             <NavLink
@@ -89,8 +83,15 @@ function SideNavbar(p) {
               className="side-nav-link side-about"
               activeClassName="main-side-nav-active"
             >
-              <FontAwesomeIcon className="fa-side-nav" icon={faAddressCard} />
               {about}
+            </NavLink>
+            <NavLink
+              exact
+              to="/infos"
+              className="side-nav-link side-infos"
+              activeClassName="main-side-nav-active"
+            >
+              {infos}
             </NavLink>
             <NavLink
               exact
@@ -98,32 +99,19 @@ function SideNavbar(p) {
               className="side-nav-link side-galery"
               activeClassName="main-side-nav-active"
             >
-              <FontAwesomeIcon className="fa-side-nav" icon={faImages} />
               {galery}
             </NavLink>
-            {/* <NavLink exact to="/events" className="side-nav-link"
-      activeClassName="main-side-nav-active">
-      אירועים
-    </NavLink> */}
-            {/* <NavLink
-        exact
-        to="/forum"
-        className="side-nav-link"
-        activeClassName="main-side-nav-active"
-      >
-        <FontAwesomeIcon className="fa-side-nav" icon={faComments} />
-        פורום
-      </NavLink> */}
             <NavLink
               exact
               to="/contact"
               className="side-nav-link side-contact"
               activeClassName="main-side-nav-active"
             >
-              <FontAwesomeIcon className="fa-side-nav" icon={faEnvelope} />
               {contact}
             </NavLink>
-            {/* <div className="animation start-home"></div> */}
+            <div className="side-nav-link language">
+              <SocialIcons className="on-side" />
+            </div>
           </div>
         </nav>
         {/* <FontAwesomeIcon icon={faPhone} className="fa-side-phone" />

@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { Container } from "react-bootstrap";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import "./Contact.scss";
@@ -78,7 +77,7 @@ function Contact(p) {
       <div className="contact-page">
         <div className="text-part">
           {contact}
-          <SocialIcons className="contact-social-icons" />
+          <SocialIcons className="on-contact" />
         </div>
         <div className="contact-part">
           <button

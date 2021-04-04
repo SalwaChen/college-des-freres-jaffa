@@ -8,11 +8,10 @@ import {
   Home,
   About,
   Contact,
-  Forum,
   Footer,
   Galery,
-  SideMenu,
   SideNavbar,
+  Infos,
 } from "./index";
 import {
   BrowserRouter as Router,
@@ -34,19 +33,21 @@ function App() {
       if (window.innerWidth <= 768) {
         setWindowSize(window.innerWidth);
         setNavbar(false);
-      } else setNavbar(true);
+      } else {
+        setNavbar(true);
+      }
     });
   }, [windowSize]);
 
   return (
     <Router>
-      <div className={`cont-logo ${language != "he" && "logo-right"}`}>
+      <div className={`cont-logo ${language !== "he" && "logo-right"}`}>
         <NavLink exact to="/">
           <img src={logo} alt="Logo" className="logo" />
         </NavLink>
       </div>
       <div className="dropdown">
-        <FontAwesomeIcon className="fa-globe dropbtn" icon={faGlobe} />
+        <FontAwesomeIcon className="fa-globe" icon={faGlobe} />
         <ul className="dropdown-content">
           <li onClick={() => setLanguage("fr")}>Français</li>
           <li onClick={() => setLanguage("he")}>עברית</li>
@@ -69,11 +70,11 @@ function App() {
         <Route path="/galery">
           <Galery />
         </Route>
-        {/* <Route path="/forum">
-          <Forum /> 
-        {/* </Route> */}
         <Route path="/contact">
           <Contact language={language} />
+        </Route>
+        <Route path="/infos">
+          <Infos language={language} />
         </Route>
       </Switch>
       <Footer language={language} />

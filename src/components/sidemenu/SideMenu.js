@@ -1,10 +1,8 @@
 import { React, useState } from "react";
 import PdfPage from "./PdfPage";
 import "./SideMenu.scss";
-import image from "../../images/side-menu-book-style.png";
 import Bacheliers from "./Bacheliers";
 import Horaires from "./Horaires";
-import Welcome from "./Welcome";
 import { Container } from "react-bootstrap";
 
 function SideMenu(p) {
@@ -120,7 +118,6 @@ function SideMenu(p) {
       <Container className="side-menu-cont">
         <div className="side-menu">{menu}</div>
         <div className="side-menu-content">
-          {contentIsEmpty ? <Welcome /> : null}
           {showHoraires ? <Horaires /> : null}
           {showBacheliers ? <Bacheliers /> : null}
         </div>
@@ -131,18 +128,3 @@ function SideMenu(p) {
 }
 
 export default SideMenu;
-// --------- HEBREU -------------
-//  <Container className="side-menu-cont">
-//         <div className="side-menu">
-//           <div>
-//             <img src={image} alt="books-vector" className="books-vector" />
-//           </div>
-
-//         </div>
-//         <div className="side-menu-content">
-//           {contentIsEmpty ? <Welcome /> : null}
-//           {showHoraires ? <Horaires /> : null}
-//           {showBacheliers ? <Bacheliers /> : null}
-//         </div>
-//       </Container>
-//       <PdfPage showModal={showModal} setShowModal={setShowModal} id={id} />

@@ -2,6 +2,8 @@
 @import "../utilities/_variables";
 
 .social-menu {
+  display: flex;
+  flex-direction: row;
   li {
     list-style: none;
     margin: 0 8px;
@@ -10,12 +12,17 @@
 .faIcons {
   font-size: 2.5rem;
   transition: 0.6s;
+}
+.on-side {
+  color: white;
+}
+.on-contact {
   color: $light-blue;
 }
 .social-icons-cont {
   position: relative;
   display: block;
-  background-color: white;
+  background-color: transparent;
   text-align: center;
   transition: 0.6s;
   margin-top: 15px;

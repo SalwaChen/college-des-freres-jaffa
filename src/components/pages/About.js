@@ -9,6 +9,7 @@ function About(p) {
     about = (
       <div className="about-page">
         <div className="text">
+          <h1>מי אנחנו</h1>
           בית הספר הוקם ב-1882, על ידי מסדר ההוראה הקתולי. בבית ספר זה לומדים
           תלמידים מכיתה א' ועד יב', בנים ובנות, יהודים, מוסלמים, נוצרים ותלמידים
           ללא השתייכות דתית. לתלמידים יש אפשרות לעבור את הבגרות או את מבחן
@@ -45,7 +46,11 @@ function About(p) {
           plurinlingue . Nos élèves passent le BAC français , ce qui leur permet
           un accès direct aux universités d'Israël et de France La section
           française de notre établissement est homologuée par le{" "}
-          <a href="https://www.education.gouv.fr/" target="_blank">
+          <a
+            href="https://www.education.gouv.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Ministère français de l’Education nationale
           </a>{" "}
           de la classe de 4ème du collège à la Terminale (séries L et S).
@@ -78,7 +83,11 @@ function About(p) {
           college is multicultural and multilingual. Our students take the
           French BAC, which allows them direct access to universities in Israel
           and France. The French section of our establishment is approved by the{" "}
-          <a href="https://www.education.gouv.fr/" target="_blank">
+          <a
+            href="https://www.education.gouv.fr/"
+            target="_blank"
+            rel="noreferrer"
+          >
             French Ministry of National Education
           </a>{" "}
           from the 8th to 12th grade(series L and S).

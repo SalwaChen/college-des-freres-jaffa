@@ -65,7 +65,7 @@
 }
 .about {
   .fa-nav {
-    color: $gray-la-salle;
+    color: $yellow;
   }
 }
 .contact {
@@ -73,3 +73,19 @@
     color: $green;
   }
 }
+// .infos-dropdown {
+//   height: 40px;
+//   .infos {
+//     font-size: 22px;
+//   }
+//   &:hover {
+//     .infos-dropdown-content {
+//       display: block;
+//     }
+//   }
+// }
+// .infos-dropdown-content {
+//   display: none;
+//   position: absolute;
+//   background-color: white;
+// }

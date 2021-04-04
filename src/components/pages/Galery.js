@@ -1,20 +1,19 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Carousel from "react-elastic-carousel";
 import MyCard from "../MyCard.js";
 import "./StylePages.scss";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
-  { width: 500, itemsToShow: 2 },
-  { width: 768, itemsToShow: 2 },
-  { width: 2200, itemsToShow: 2 },
+  { width: 500, itemsToShow: 1 },
+  { width: 768, itemsToShow: 1 },
+  { width: 2200, itemsToShow: 1 },
 ];
 const STYLE = {
   borderRadius: "6px",
   boxShadow: "0 3px 5px 2px rgba(0, 0, 0, 0.2)",
   padding: "25px",
-  // backgroundColor: "red",
   paddingTop: "10vh",
 };
 const color = {};

@@ -27,6 +27,9 @@
   .nav {
     font-weight: 600;
   }
+  .side-nav-link {
+    padding: 8px 32px 8px 8px;
+  }
 }
 .side-nav-link {
   width: 250px;
@@ -35,10 +38,6 @@
   min-height: 7vh;
   padding: 8px 8px 8px 32px;
   display: block;
-  //   transition: 0.3s;
-  //   &:hover {
-  //     color: #f1f1f1;
-  //   }
   &:hover {
     text-decoration: none;
     color: white;
@@ -77,17 +76,38 @@
 .burger-right {
   right: 0;
 }
-.side-galery {
-  background-color: $pink;
-}
 .side-home {
-  background-color: $light-blue;
+  background-color: $dark-blue;
+  &:hover {
+    background-color: lighten($dark-blue, 7%);
+  }
 }
 .side-about {
-  background-color: $gray-la-salle;
+  background-color: $pink;
+  &:hover {
+    background-color: lighten($pink, 7%);
+  }
+}
+.side-infos {
+  background-color: $magenta;
+  &:hover {
+    background-color: lighten($magenta, 7%);
+  }
+}
+.side-galery {
+  background-color: $yellow;
+  &:hover {
+    background-color: lighten($yellow, 7%);
+  }
 }
 .side-contact {
   background-color: $green;
+  &:hover {
+    background-color: lighten($green, 7%);
+  }
+}
+.language {
+  background-color: $light-blue;
 }
 // side-social-icons {
 //   background-color: $dark-blue;
