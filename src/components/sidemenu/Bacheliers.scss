@@ -1,0 +1,25 @@
+@import "../../utilities/_variables";
+
+.container-bacheliers {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#select-bacheliers {
+  padding: 8px 8px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 20px;
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+  option {
+    background-color: white;
+    // &:hover {
+    //   background-color: black;
+    // }
+  }
+}

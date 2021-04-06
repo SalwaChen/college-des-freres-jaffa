@@ -1,17 +1,24 @@
 @import "../../utilities/_variables";
 
 table {
+  margin-bottom: -120px;
+  &:after {
+    content: "";
+    display: block;
+    height: 120px;
+  }
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
-  min-width: 400px;
+  min-width: 310px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   text-align: left;
 
   thead tr {
-    background-color: $blue;
+    background-color: $light-blue;
+    font-size: 1.3rem;
     color: #ffffff;
     text-align: left;
     font-weight: bold;
@@ -24,6 +31,7 @@ table {
     border-bottom: 1px solid #dddddd;
     &:nth-of-type(even) {
       border-bottom: 2px solid $blue;
+      background-color: rgb(221, 219, 219);
     }
   }
 }

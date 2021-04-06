@@ -9,7 +9,7 @@
 }
 body {
   height: 100%;
-  width: 95%;
+  width: 100%;
   // For Google Chrome
   &::-webkit-scrollbar {
     width: 0.5rem;
@@ -75,5 +75,5 @@ body {
 .fa-globe {
   padding-top: 10px;
   font-size: 3rem;
-  color: $green;
+  color: $yellow;
 }

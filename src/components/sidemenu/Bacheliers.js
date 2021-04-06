@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./SideMenu";
 import Result from "./Result";
 import { Container } from "react-bootstrap";
-import "../pages/Infos.scss";
-function Bacheliers() {
+import "./Bacheliers.scss";
+function Bacheliers(p) {
   const [idResult, setIdResult] = useState("");
 
   function handleChange(e) {
@@ -11,11 +11,29 @@ function Bacheliers() {
       setIdResult(e.target.value);
     }
   }
+  let year = "";
+  switch (p.language) {
+    case "fr":
+      year = "Année";
+      break;
+    case "he":
+      year = "בחרו שנה";
+      break;
+    case "en":
+      year = "Year";
+      break;
+    default:
+  }
+
   return (
     <>
-      <Container>
-        <select name="bacheliers" id="bacheliers" onChange={handleChange}>
-          <option value="pick">בחרו שנה</option>
+      <Container className="container-bacheliers">
+        <select
+          name="bacheliers"
+          id="select-bacheliers"
+          onChange={handleChange}
+        >
+          <option value="pick">{year}</option>
           <option value="1991">1991</option>
           <option value="1992">1992</option>
           <option value="1993">1993</option>

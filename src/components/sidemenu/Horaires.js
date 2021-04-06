@@ -1,13 +1,26 @@
 import React from "react";
-import "../pages/Infos.scss";
+import "./Horaires.scss";
 
-const Horaires = () => {
+const Horaires = (p) => {
   function handleChange(e) {
     // console.log(e.target.value);
   }
+  let classe = "";
+  switch (p.language) {
+    case "fr":
+      classe = "Classe";
+      break;
+    case "he":
+      classe = "בחרו כיתה";
+      break;
+    case "en":
+      classe = "Grade";
+      break;
+    default:
+  }
   return (
     <select name="classes" id="classes" onChange={handleChange}>
-      <option>בחרו כיתה :</option>
+      <option>{classe}</option>
       <option value="1A">1A - כיתה א'</option>
       <option value="1B">1B - כיתה א'</option>
       <option value="1C">1C - כיתה א'</option>

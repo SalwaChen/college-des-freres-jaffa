@@ -16,20 +16,21 @@ function Footer(p) {
     location = "רחוב יפת 23, תל-אביב יפו";
     contact = "צור קשר";
   } else if (p.language === "fr") {
-    location = "Rue Yeffet 23, Tel-aviv Jaffa";
+    location = (
+      <div>
+        Rue Yeffet 23 <div>Tel-aviv Jaffa</div>
+      </div>
+    );
     contact = "Contactez-nous";
   } else if (p.language === "en") {
     location = "St. Yefet 23, Tel-aviv Yafo";
     contact = "Contact us";
   }
   return (
-    <Container fluid className="footer-comp">
-      <Row>
-        <Col className="contact-us">
-          {/* <FontAwesomeIcon icon={faMapMarkerAlt} className="fa map" /> */}
-          {location}
-        </Col>
-        <Col>
+    <Container fluid className="footer-container">
+      <Row className="footer-row">
+        <div className="address">{location}</div>
+        <div className="footer-icons">
           <ul className="social-menu-footer">
             <li>
               <a
@@ -71,16 +72,11 @@ function Footer(p) {
               </a>
             </li>
           </ul>
-        </Col>
-        {/* <div className="phone-cont"> */}
-        {/* <div>
-            <FontAwesomeIcon icon={faPhone} className="fa phone" />
-          </div> */}
-        <Col className="address">
+        </div>
+        <div className="contact-us">
           {contact}
           <div>03-6821890</div>
-        </Col>
-        {/* </div> */}
+        </div>
       </Row>
     </Container>
   );

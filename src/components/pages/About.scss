@@ -7,16 +7,17 @@ body {
 .cont-about {
   // background-color: lighten($background, 7%);
   border-radius: 6px;
+
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
   padding: 25px;
   // margin-top: 8%;
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px;
+  margin-bottom: -120px;
   &:after {
     content: "";
     display: block;
-    height: 142px;
+    height: 120px;
   }
 }
 .text {
@@ -47,5 +48,11 @@ body {
     a {
       text-decoration: none;
     }
+  }
+}
+@media only screen and(max-width: 768px) {
+  cont-about {
+    font-size: 6vw;
+    min-width: 100%;
   }
 }
