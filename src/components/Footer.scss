@@ -45,13 +45,19 @@
 }
 
 @media screen and (max-width: 768px) {
-  .footer-container {
-  }
   .social-menu-footer {
     margin-right: 28px;
     margin-left: 28px;
     .fa-footer {
       font-size: 38px;
     }
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer-container {
+    font-size: 14px;
+  }
+  .fa-footer {
+    font-size: 33px;
   }
 }

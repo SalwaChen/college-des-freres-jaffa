@@ -60,7 +60,7 @@ const images = [
 
 function Gallery() {
   return (
-    <div>
+    <div className="gallery-cont">
       {/* <Container className="gallery-cont" style={STYLE}>
         <Carousel style={color} breakPoints={breakPoints}>
           <MyCard src={window.location.origin + "/img/1.jpg"} alt="image1" />
@@ -73,7 +73,6 @@ function Gallery() {
           <MyCard src={window.location.origin + "/img/8.jpg"} alt="image8" />
           <MyCard src={window.location.origin + "/img/9.jpg"} alt="image9" />
         </Carousel> */}
-      {/* </Container> */}
       <ImageGallery items={images} />;
     </div>
   );

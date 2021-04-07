@@ -11,6 +11,7 @@ body {
 }
 //---------------- GALERY PAGE ---------------
 .gallery-cont {
+  margin-top: 60px;
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -120px;
@@ -38,5 +39,10 @@ body {
     content: "";
     display: block;
     height: 120px;
+  }
+}
+@media screen and(max-width: 768px) {
+  .gallery-cont {
+    margin-top: 75px;
   }
 }
