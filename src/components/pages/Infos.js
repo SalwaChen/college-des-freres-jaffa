@@ -6,7 +6,7 @@ import Horaires from "../sidemenu/Horaires";
 import { Container } from "react-bootstrap";
 import collection from "../../images/collection.png";
 
-function SideMenu(p) {
+function Infos(p) {
   const [showModal, setShowModal] = useState(false);
   const [showHoraires, setShowHoraires] = useState(false);
   const [showBacheliers, setShowBacheliers] = useState(false);
@@ -133,4 +133,4 @@ function SideMenu(p) {
   );
 }
 
-export default SideMenu;
+export default Infos;

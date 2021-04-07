@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./SideMenu";
 import Result from "./Result";
 import { Container } from "react-bootstrap";
 import "./Bacheliers.scss";

@@ -19,25 +19,25 @@ function SideNavbar(p) {
   }
   let home,
     about,
-    galery,
+    gallery,
     contact,
     infos = "";
   if (p.language === "fr") {
     home = "Acceuil";
     about = "À propos";
-    galery = "Galerie";
+    gallery = "Galerie";
     infos = "Renseignements";
     contact = "Contact";
   } else if (p.language === "he") {
     home = "דף הבית";
     about = "אודות";
-    galery = "גלריה";
+    gallery = "גלריה";
     infos = "מידע";
     contact = "צור קשר";
   } else if (p.language === "en") {
     home = "Home";
     about = "About";
-    galery = "Galery";
+    gallery = "Gallery";
     infos = "Infos";
     contact = "Contact";
   }
@@ -74,6 +74,7 @@ function SideNavbar(p) {
               to="/"
               className="side-nav-link side-home"
               activeClassName="main-side-nav-active"
+              onClick={handleClose}
             >
               {home}
             </NavLink>
@@ -82,6 +83,7 @@ function SideNavbar(p) {
               to="/about"
               className="side-nav-link side-about"
               activeClassName="main-side-nav-active"
+              onClick={handleClose}
             >
               {about}
             </NavLink>
@@ -90,22 +92,25 @@ function SideNavbar(p) {
               to="/infos"
               className="side-nav-link side-infos"
               activeClassName="main-side-nav-active"
+              onClick={handleClose}
             >
               {infos}
             </NavLink>
             <NavLink
               exact
-              to="/galery"
-              className="side-nav-link side-galery"
+              to="/gallery"
+              className="side-nav-link side-gallery"
               activeClassName="main-side-nav-active"
+              onClick={handleClose}
             >
-              {galery}
+              {gallery}
             </NavLink>
             <NavLink
               exact
               to="/contact"
               className="side-nav-link side-contact"
               activeClassName="main-side-nav-active"
+              onClick={handleClose}
             >
               {contact}
             </NavLink>

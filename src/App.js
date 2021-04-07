@@ -9,7 +9,7 @@ import {
   About,
   Contact,
   Footer,
-  Galery,
+  Gallery,
   SideNavbar,
   Infos,
 } from "./index";
@@ -47,11 +47,42 @@ function App() {
         </NavLink>
       </div>
       <div className="dropdown">
-        <FontAwesomeIcon className="fa-globe" icon={faGlobe} />
+        <FontAwesomeIcon
+          className="fa-globe"
+          icon={faGlobe}
+          onClick={() =>
+            (document.querySelector(".dropdown-content").style.display =
+              "block")
+          }
+        />
         <ul className="dropdown-content">
-          <li onClick={() => setLanguage("fr")}>Français</li>
-          <li onClick={() => setLanguage("he")}>עברית</li>
-          <li onClick={() => setLanguage("en")}>English</li>
+          <li
+            onClick={() => {
+              setLanguage("fr");
+              document.querySelector(".dropdown-content").style.display =
+                "none";
+            }}
+          >
+            Français
+          </li>
+          <li
+            onClick={() => {
+              setLanguage("he");
+              document.querySelector(".dropdown-content").style.display =
+                "none";
+            }}
+          >
+            עברית
+          </li>
+          <li
+            onClick={() => {
+              setLanguage("en");
+              document.querySelector(".dropdown-content").style.display =
+                "none";
+            }}
+          >
+            English
+          </li>
         </ul>
       </div>
 
@@ -67,8 +98,8 @@ function App() {
         <Route path="/about">
           <About language={language} />
         </Route>
-        <Route path="/galery">
-          <Galery />
+        <Route path="/gallery">
+          <Gallery />
         </Route>
         <Route path="/contact">
           <Contact language={language} />

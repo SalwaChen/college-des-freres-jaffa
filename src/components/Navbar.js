@@ -14,25 +14,25 @@ import { Container } from "react-bootstrap";
 function Navbar(p) {
   let home,
     about,
-    galery,
+    gallery,
     contact,
     infos = "";
   if (p.language === "fr") {
     home = "Acceuil";
     about = "À propos";
-    galery = "Galerie";
+    gallery = "Galerie";
     infos = "Infos";
     contact = "Contact";
   } else if (p.language === "he") {
     home = "דף הבית";
     about = "אודות";
-    galery = "גלריה";
+    gallery = "גלריה";
     infos = "מידע";
     contact = "צור קשר";
   } else if (p.language === "en") {
     home = "Home";
     about = "About";
-    galery = "Galery";
+    gallery = "Gallery";
     infos = "Infos";
     contact = "Contact";
   }
@@ -69,12 +69,12 @@ function Navbar(p) {
           </NavLink>
           <NavLink
             exact
-            to="/galery"
-            className="nav-links galery"
+            to="/gallery"
+            className="nav-links gallery"
             activeClassName="main-nav-active"
           >
             <FontAwesomeIcon className="fa-nav" icon={faImages} />
-            {galery}
+            {gallery}
           </NavLink>
           <NavLink
             exact

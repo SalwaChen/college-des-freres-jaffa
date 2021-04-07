@@ -16,6 +16,7 @@
   }
 }
 .side-right {
+  position: absolute;
   right: 0;
   direction: rtl;
   text-align: right;
@@ -95,7 +96,7 @@
     background-color: lighten($magenta, 7%);
   }
 }
-.side-galery {
+.side-gallery {
   background-color: $yellow;
   &:hover {
     background-color: lighten($yellow, 7%);

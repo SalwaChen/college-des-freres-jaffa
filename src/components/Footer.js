@@ -7,13 +7,17 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 // import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.scss";
-import { Container, Row, Col } from "reactstrap";
+import { Container } from "reactstrap";
 
 function Footer(p) {
   let location,
     contact = "";
   if (p.language === "he") {
-    location = "רחוב יפת 23, תל-אביב יפו";
+    location = (
+      <div>
+        רחוב יפת 23 <div>תל אביב-יפו </div>
+      </div>
+    );
     contact = "צור קשר";
   } else if (p.language === "fr") {
     location = (
@@ -23,12 +27,16 @@ function Footer(p) {
     );
     contact = "Contactez-nous";
   } else if (p.language === "en") {
-    location = "St. Yefet 23, Tel-aviv Yafo";
+    location = (
+      <div>
+        St. Yefet 23<div>Tel-Aviv-Yafo</div>
+      </div>
+    );
     contact = "Contact us";
   }
   return (
     <Container fluid className="footer-container">
-      <Row className="footer-row">
+      <div className="footer-row">
         <div className="address">{location}</div>
         <div className="footer-icons">
           <ul className="social-menu-footer">
@@ -77,7 +85,7 @@ function Footer(p) {
           {contact}
           <div>03-6821890</div>
         </div>
-      </Row>
+      </div>
     </Container>
   );
 }
