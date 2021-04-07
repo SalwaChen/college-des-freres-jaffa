@@ -42,10 +42,9 @@ function Infos(p) {
           מערכת שעות
         </li>
         <li id="vaccances" onClick={openModal}>
-          לוח חופשות
+          לוח חופשים
         </li>
         <li>שעות חופשיות מורים</li>
-        <li>מסמכים חשובים</li>
         <li id="reduction-hebreu" onClick={openModal}>
           טופס בקשה להנחה
         </li>
@@ -70,7 +69,6 @@ function Infos(p) {
           Vaccances
         </li>
         <li>Temps Libre - profs</li>
-        <li>Documents nécessaires</li>
         <li id="reduction" onClick={openModal}>
           Demande de Réduction
         </li>
@@ -95,7 +93,6 @@ function Infos(p) {
           Vacation
         </li>
         <li>Teacher's free time</li>
-        <li>necessary documents</li>
         <li id="reduction-hebreu" onClick={openModal}>
           Reduction request
         </li>
