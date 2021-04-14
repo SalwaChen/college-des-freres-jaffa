@@ -1,11 +1,12 @@
 @import "../../utilities/_variables";
 
 .contact-cont {
+  overflow: hidden;
   background-color: lighten($background, 7%);
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  margin-top: 5vh;
+  margin-top: 40px;
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -120px;
@@ -21,7 +22,7 @@
   align-items: center;
 }
 .text-part {
-  text-align: right;
+  text-align: center;
 }
 .contact-part {
 }
@@ -54,7 +55,7 @@
     flex-direction: column;
   }
   .text-part {
-    margin-top: 30px;
+    margin-top: 35px;
   }
 }
 

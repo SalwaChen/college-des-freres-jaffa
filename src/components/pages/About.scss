@@ -1,15 +1,17 @@
 @import "../../utilities/_variables";
 
 // --------------- ABOUT PAGE ------------------
-body {
-  background-color: $background;
-}
 .cont-about {
-  // background-color: lighten($background, 7%);
+  overflow: hidden;
+  font-size: 1.2rem;
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
-  padding: 25px;
-  // margin-top: 8%;
+  padding: 20px;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -120px;
@@ -23,6 +25,7 @@ body {
   width: 75%;
 }
 .about-page {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,6 +55,11 @@ body {
 @media only screen and(max-width: 768px) {
   .cont-about {
     font-size: 16px;
-    margin-top: 33px;
+    margin-top: 34px;
+  }
+  .about-page {
+    .girl-on-books-img {
+      width: 400px;
+    }
   }
 }

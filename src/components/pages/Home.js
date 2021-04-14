@@ -9,8 +9,8 @@ function Home(p) {
       <h1>Welcome</h1>
       <h1>Bienvenue</h1>
       <h1>ברוכים הבאים</h1>
-      <h1>مرحبا</h1>
-      <MyCard language={p.language} />
+      {/* <h1>مرحبا</h1> */}
+      {/* <MyCard language={p.language} /> */}
     </Container>
   );
 }

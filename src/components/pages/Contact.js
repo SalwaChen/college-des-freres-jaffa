@@ -77,20 +77,20 @@ function Contact(p) {
       <div className="contact-page">
         <div className="text-part">
           {contact}
-          <SocialIcons className="on-contact" />
+          {/* <SocialIcons className="on-contact" /> */}
         </div>
         <div className="contact-part">
-          <button
+          {/* <button
             type="button"
             className="send out"
             onClick={() => setIsOpen(true)}
-          >
-            <FontAwesomeIcon icon={faPaperPlane} className="icon" />
-            <div className="contact-symbol-img">
-              <div>{send}</div>
-              <img src={image} alt="secretary" className="secretary-img" />
-            </div>
-          </button>
+          > */}
+          {/* <FontAwesomeIcon icon={faPaperPlane} className="icon" /> */}
+          <div className="contact-symbol-img">
+            {/* <div>{send}</div> */}
+            <img src={image} alt="secretary" className="secretary-img" />
+          </div>
+          {/* </button> */}
           <Modal
             id="modal"
             isOpen={isOpen}

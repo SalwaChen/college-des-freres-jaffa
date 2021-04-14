@@ -6,8 +6,10 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 // import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
+
 import "./Footer.scss";
 import { Container } from "reactstrap";
+import { withRouter } from "react-router-dom";
 
 function Footer(p) {
   let location,

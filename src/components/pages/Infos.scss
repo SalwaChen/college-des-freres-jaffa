@@ -1,6 +1,7 @@
 @import "../../utilities/_variables";
 
 .container-side-menu {
+  overflow: hidden;
   font-size: 1.2rem;
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
@@ -33,7 +34,7 @@
   margin-right: 10%;
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
-  z-index: 100;
+  z-index: 10;
   .list {
     li {
       min-width: 250px;

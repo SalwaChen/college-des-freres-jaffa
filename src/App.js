@@ -22,11 +22,26 @@ import {
 
 import logo from "./images/logo-png.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Children } from "react";
 
 function App() {
   const [language, setLanguage] = useState("fr");
   const [windowSize, setWindowSize] = useState(window.innerWidth);
   const [navbar, setNavbar] = useState(true);
+  const [clicked, setClicked] = useState(false);
+  function handleClick(e) {
+    if (!clicked) {
+      setClicked(true);
+      document
+        .querySelector(".dropdown-content")
+        .classList.add("show-dropdown-content");
+    } else {
+      document
+        .querySelector(".dropdown-content")
+        .classList.remove("show-dropdown-content");
+      setClicked(false);
+    }
+  }
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -35,6 +50,14 @@ function App() {
         setNavbar(false);
       } else {
         setNavbar(true);
+      }
+    });
+    document.body.addEventListener("click", (e) => {
+      if (!(e.target.className === "language-btn")) {
+        document
+          .querySelector(".dropdown-content")
+          .classList.remove("show-dropdown-content");
+        setClicked(false);
       }
     });
   }, [windowSize]);
@@ -47,20 +70,15 @@ function App() {
         </NavLink>
       </div>
       <div className="dropdown">
-        <FontAwesomeIcon
-          className="fa-globe"
-          icon={faGlobe}
-          onClick={() =>
-            (document.querySelector(".dropdown-content").style.display =
-              "block")
-          }
-        />
+        <button className="language-btn" onClick={handleClick}>
+          <FontAwesomeIcon icon={faGlobe} className="fa-globe" />{" "}
+          {language.toUpperCase()}
+        </button>
         <ul className="dropdown-content">
           <li
             onClick={() => {
               setLanguage("fr");
-              document.querySelector(".dropdown-content").style.display =
-                "none";
+              handleClick();
             }}
           >
             Français
@@ -68,8 +86,7 @@ function App() {
           <li
             onClick={() => {
               setLanguage("he");
-              document.querySelector(".dropdown-content").style.display =
-                "none";
+              handleClick();
             }}
           >
             עברית
@@ -77,8 +94,7 @@ function App() {
           <li
             onClick={() => {
               setLanguage("en");
-              document.querySelector(".dropdown-content").style.display =
-                "none";
+              handleClick();
             }}
           >
             English

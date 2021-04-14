@@ -31,17 +31,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .contact-us {
+  text-align: center;
 }
 .facebook {
   color: $dark-blue;
 }
 .instagram {
-  color: $magenta;
+  color: $yellow;
 }
 .youtube {
-  color: $yellow;
+  color: $magenta;
 }
 
 @media screen and (max-width: 768px) {
@@ -56,8 +58,14 @@
 @media screen and (max-width: 400px) {
   .footer-container {
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .fa-footer {
     font-size: 33px;
+  }
+  .social-menu-footer {
+    margin-top: 15px;
   }
 }
