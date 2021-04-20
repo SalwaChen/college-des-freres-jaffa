@@ -1,14 +1,5 @@
 @import "../../utilities/_variables";
 
-@import "~react-image-gallery/styles/scss/image-gallery.scss";
-
-body {
-  background-color: $background;
-}
-* {
-  // ---- UNCOMMENT TO CHANGE TO HEBREW -----
-  // direction: rtl;
-}
 //---------------- GALERY PAGE ---------------
 .gallery-cont {
   margin-top: 60px;
@@ -21,7 +12,7 @@ body {
     height: 120px;
   }
 }
-// ---------- HOME PAGE && INFOS ----------
+// ---------- HOME PAGE ----------
 .home-cont {
   font-size: 1.2rem;
   border-radius: 6px;
