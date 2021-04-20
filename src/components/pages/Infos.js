@@ -57,23 +57,24 @@ function Infos(p) {
       </ul>
     );
   } else if (p.language === "fr") {
+    //<li id="reglement-hebreu" onClick={openModal}>Règlement
     menu = (
       <ul className="list">
-        <li id="reglement-hebreu" onClick={openModal}>
-          Règlement
+        <li id="reglement-fr">
+          <a href="./documents/reglement-fr.pdf">Règlement</a>
         </li>
         <li onClick={handleClick} id="horaires">
           Horaires des classes
         </li>
-        <li id="vaccances" onClick={openModal}>
-          Vaccances
+        <li id="vaccances">
+          <a href="./documents/vaccances.pdf">Vaccances</a>
         </li>
         <li>Temps Libre - profs</li>
-        <li id="reduction" onClick={openModal}>
-          Demande de Réduction
+        <li id="reduction">
+          <a href="./documents/reduction-fr.pdf">Demande de Réduction</a>
         </li>
-        <li id="prelevement-hebreu" onClick={openModal}>
-          Prélèvement bancaire
+        <li id="prelevement-hebreu">
+          <a href="./documents/prelevement-hebreu.pdf"> Prélèvement bancaire</a>
         </li>
         <li onClick={handleClick} id="bacheliers">
           Bacheliers
