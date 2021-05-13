@@ -16,13 +16,14 @@
 .social-menu-footer {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin-left: 120px;
   margin-right: 120px;
 
   .fa-footer {
     font-size: 2.5rem;
+    margin: 5px;
   }
 }
 .footer-icons {
@@ -48,24 +49,29 @@
 
 @media screen and (max-width: 768px) {
   .social-menu-footer {
-    margin-right: 28px;
-    margin-left: 28px;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-left: 100px;
     .fa-footer {
-      font-size: 38px;
+      font-size: 33px;
+      margin: 2px;
     }
   }
 }
 @media screen and (max-width: 400px) {
   .footer-container {
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .fa-footer {
-    font-size: 33px;
-  }
+
   .social-menu-footer {
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+    .fa-footer {
+      font-size: 27px;
+    }
   }
 }

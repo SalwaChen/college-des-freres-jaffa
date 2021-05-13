@@ -98,7 +98,7 @@ function About(p) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="read-more">En savoir plus</div>
+            <div className="read-more">Read more</div>
             <img
               className="girl-on-books-img"
               src={image}

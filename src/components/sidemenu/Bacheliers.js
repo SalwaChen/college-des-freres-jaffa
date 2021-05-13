@@ -33,6 +33,10 @@ function Bacheliers(p) {
           onChange={handleChange}
         >
           <option value="pick">{year}</option>
+          <option value="1987">1987</option>
+          <option value="1988">1988</option>
+          <option value="1989">1989</option>
+          <option value="1990">1990</option>
           <option value="1991">1991</option>
           <option value="1992">1992</option>
           <option value="1993">1993</option>

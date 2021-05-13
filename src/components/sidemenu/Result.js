@@ -1,7 +1,231 @@
 import React from "react";
 import "./Result.scss";
 const Result = (idResult) => {
-  if (idResult.idResult === "1991") {
+  if (idResult.idResult === "1987") {
+    return (
+      <>
+        <table id="1987">
+          <thead>
+            <tr>
+              <th>Last Name</th>
+              <th>First Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dayan</td>
+              <td>Ilan</td>
+            </tr>
+            <tr>
+              <td>Gandour</td>
+              <td>Andrea</td>
+            </tr>
+            <tr>
+              <td>Ghattas</td>
+              <td>Fadwa</td>
+            </tr>
+            <tr>
+              <td>Hendelleh</td>
+              <td>Selim</td>
+            </tr>
+            <tr>
+              <td>Hinnawi</td>
+              <td>Fadwa</td>
+            </tr>
+            <tr>
+              <td>Lasenzaniro</td>
+              <td>Elisabetta</td>
+            </tr>
+            <tr>
+              <td>Mansour</td>
+              <td>Evelyne</td>
+            </tr>
+            <tr>
+              <td>Mizrahi</td>
+              <td>Sami</td>
+            </tr>
+            <tr>
+              <td>Oliel</td>
+              <td>Simy</td>
+            </tr>
+            <tr>
+              <td>Tournot</td>
+              <td>Manuel Gil</td>
+            </tr>
+            <tr>
+              <td>Zeinab</td>
+              <td>Fathiah</td>
+            </tr>
+          </tbody>
+        </table>
+      </>
+    );
+  } else if (idResult.idResult === "1988") {
+    return (
+      <>
+        <table id="1988">
+          <thead>
+            <tr>
+              <th>Last Name</th>
+              <th>First Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abdel Ghani</td>
+              <td>Mervat</td>
+            </tr>
+            <tr>
+              <td>Beatus</td>
+              <td>Thierry</td>
+            </tr>
+            <tr>
+              <td>Boukhari</td>
+              <td>Zeinab</td>
+            </tr>
+            <tr>
+              <td>Chabaita</td>
+              <td>Ghada</td>
+            </tr>
+            <tr>
+              <td>Eisenmann</td>
+              <td>Cordula Barbara</td>
+            </tr>
+            <tr>
+              <td>Engel</td>
+              <td>Myrian Estelle</td>
+            </tr>
+            <tr>
+              <td>Gougassian</td>
+              <td>Hasmig</td>
+            </tr>
+            <tr>
+              <td>Hamati</td>
+              <td>Toni</td>
+            </tr>
+            <tr>
+              <td>Hinnawi</td>
+              <td>Badia</td>
+            </tr>
+            <tr>
+              <td>Moche</td>
+              <td>Irit</td>
+            </tr>
+          </tbody>
+        </table>
+      </>
+    );
+  } else if (idResult.idResult === "1989") {
+    return (
+      <>
+        <table id="1989">
+          <thead>
+            <tr>
+              <th>Last Name</th>
+              <th>First Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abou Layoun</td>
+              <td>Guila</td>
+            </tr>
+            <tr>
+              <td>Abou Ramadan</td>
+              <td>Moussa</td>
+            </tr>
+            <tr>
+              <td>Abou Tabikh</td>
+              <td>Firyal</td>
+            </tr>
+            <tr>
+              <td>Chabaita</td>
+              <td>Hicham</td>
+            </tr>
+            <tr>
+              <td>Ghattas</td>
+              <td>Badieh</td>
+            </tr>
+            <tr>
+              <td>Hamdan</td>
+              <td>Hillel</td>
+            </tr>
+            <tr>
+              <td>Monterescu</td>
+              <td>Dany</td>
+            </tr>
+            <tr>
+              <td>Tollah</td>
+              <td>Marie Laure</td>
+            </tr>
+          </tbody>
+        </table>
+      </>
+    );
+  } else if (idResult.idResult === "1990") {
+    return (
+      <>
+        <table id="1990">
+          <thead>
+            <tr>
+              <th>Last Name</th>
+              <th>First Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Badran</td>
+              <td>Amir</td>
+            </tr>
+            <tr>
+              <td>Chaya</td>
+              <td>Emile</td>
+            </tr>
+            <tr>
+              <td>Deeb</td>
+              <td>Alfred</td>
+            </tr>
+            <tr>
+              <td>Fitoussi</td>
+              <td>Marc</td>
+            </tr>
+            <tr>
+              <td>Hamati</td>
+              <td>Elizabeth</td>
+            </tr>
+            <tr>
+              <td>Hinnawi</td>
+              <td>Nadia</td>
+            </tr>
+            <tr>
+              <td>Jabbour</td>
+              <td>Maroun</td>
+            </tr>
+            <tr>
+              <td>Khalili</td>
+              <td>Yasmin</td>
+            </tr>
+            <tr>
+              <td>Mahamid</td>
+              <td>Wael</td>
+            </tr>
+            <tr>
+              <td>Mansour</td>
+              <td>Georges</td>
+            </tr>
+            <tr>
+              <td>Mirmand</td>
+              <td>Martin</td>
+            </tr>
+            <tr>
+              <td>Satel</td>
+              <td>Iman</td>
+            </tr>
+          </tbody>
+        </table>
+      </>
+    );
+  } else if (idResult.idResult === "1991") {
     return (
       <>
         <table id="1991">

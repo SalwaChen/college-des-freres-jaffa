@@ -29,7 +29,7 @@ function SocialIcons(c) {
         </li>
         <li>
           <a
-            href="https://www.facebook.com/groups/828828680554815"
+            href="https://www.facebook.com/freres.jaffa"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icons-cont"

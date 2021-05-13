@@ -1,0 +1,42 @@
+@import "../utilities/_variables";
+.slider {
+  position: relative;
+  margin-top: 80px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  max-width: 600px;
+  width: 100vw;
+  height: auto;
+  border-radius: 10px;
+}
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 5vw;
+  font-size: 2rem;
+  color: $gray;
+  z-index: 10;
+  cursor: pointer;
+}
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 5vw;
+  font-size: 2rem;
+  color: $gray;
+  z-index: 10;
+  cursor: pointer;
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}

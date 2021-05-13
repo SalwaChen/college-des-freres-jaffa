@@ -12,6 +12,7 @@ import {
   Gallery,
   SideNavbar,
   Infos,
+  SliderData,
 } from "./index";
 import {
   BrowserRouter as Router,
@@ -115,7 +116,7 @@ function App() {
           <About language={language} />
         </Route>
         <Route path="/gallery">
-          <Gallery />
+          <Gallery language={language} slides={SliderData} />
         </Route>
         <Route path="/contact">
           <Contact language={language} />

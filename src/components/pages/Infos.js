@@ -13,14 +13,6 @@ function Infos(p) {
   const [id, setId] = useState("");
   const [contentIsEmpty, setContentIsEmpty] = useState(true);
 
-  function openModal(e) {
-    setContentIsEmpty(true);
-    setShowBacheliers(false);
-    setShowHoraires(false);
-    setShowModal(true);
-    setId(e.target.id);
-  }
-
   function handleClick(e) {
     setContentIsEmpty(false);
     if (e.target.id === "horaires") {
@@ -35,22 +27,23 @@ function Infos(p) {
   if (p.language === "he") {
     menu = (
       <ul className="list">
-        <li id="reglement-hebreu" onClick={openModal}>
-          תקנון בית הספר
+        <li id="reglement-hebreu">
+          <a href="./documents/reglement-hebreu.pdf">תקנון בית הספר</a>
         </li>
         <li onClick={handleClick} id="horaires">
           מערכת שעות
         </li>
-        <li id="vaccances" onClick={openModal}>
-          לוח חופשים
+        <li id="vaccances">
+          <a href="./documents/vaccances.pdf">לוח חופשים</a>
         </li>
         <li>שעות חופשיות מורים</li>
-        <li id="reduction-hebreu" onClick={openModal}>
-          טופס בקשה להנחה
+        <li id="reduction-hebreu">
+          <a href="./documents/reduction-hebreu.pdf">טופס בקשה להנחה</a>
         </li>
-        <li id="prelevement-hebreu" onClick={openModal}>
-          פרטי חשבון בנק
+        <li id="prelevement-hebreu">
+          <a href="./documents/prelevement-hebreu.pdf">פרטי חשבון בנק</a>
         </li>
+
         <li onClick={handleClick} id="bacheliers">
           רשימת בוגרים{" "}
         </li>
@@ -84,21 +77,21 @@ function Infos(p) {
   } else if (p.language === "en") {
     menu = (
       <ul className="list">
-        <li id="reglement-hebreu" onClick={openModal}>
-          Rules
+        <li id="reglement-hebreu">
+          <a href="./documents/reglement-hebreu.pdf">Rules</a>
         </li>
         <li onClick={handleClick} id="horaires">
           Schedule of classes
         </li>
-        <li id="vaccances" onClick={openModal}>
-          Vacation
+        <li id="vaccances">
+          <a href="./documents/vaccances.pdf"> Vacation</a>
         </li>
         <li>Teacher's free time</li>
-        <li id="reduction-hebreu" onClick={openModal}>
-          Reduction request
+        <li id="reduction-hebreu">
+          <a href="./documents/reduction-hebreu.pdf">Reduction request</a>
         </li>
-        <li id="prelevement-hebreu" onClick={openModal}>
-          Bank direct debit
+        <li id="prelevement-hebreu">
+          <a href="./documents/prelevement-hebreu.pdf">Bank direct debit</a>
         </li>
         <li onClick={handleClick} id="bacheliers">
           High school graduates

@@ -2,23 +2,12 @@
 
 //---------------- GALERY PAGE ---------------
 .gallery-cont {
-  margin-top: 60px;
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -120px;
-  &:after {
-    content: "";
-    display: block;
-    height: 120px;
-  }
-}
-// ---------- HOME PAGE ----------
-.home-cont {
+  overflow: hidden;
   font-size: 1.2rem;
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin-top: 45px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,8 +21,25 @@
     height: 120px;
   }
 }
-@media screen and(max-width: 768px) {
-  .gallery-cont {
-    margin-top: 75px;
+.thumbnail {
+  border-radius: 10px;
+  width: 200px;
+  height: 170px;
+}
+.more {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: black;
+  &:hover {
+    color: $dark-blue;
+    text-decoration: none;
   }
+}
+
+@media screen and(max-width: 768px) {
+  // .gallery-cont {
+  //   margin-top: 75px;
+  // }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardImg, CardText, CardBody, CardLink } from "reactstrap";
+import "./MyCard.scss";
 import baptiste from "../images/baptiste.jpg";
 
 function MyCard(p) {
@@ -61,16 +62,15 @@ function MyCard(p) {
   }
 
   return (
-    <div>
-      <Card style={{ width: "16rem" }}>
-        <CardImg src={baptiste} />
-        <CardBody>
-          <h3>{title}</h3>
-          <CardText>{text}</CardText>
-          <CardLink href={link}>{read}</CardLink>
-        </CardBody>
-      </Card>
-    </div>
+    <Card className="card-cont">
+      <CardImg src={baptiste} className="card-image" />
+      <CardBody className="card-body">
+        <CardText className="card-text">{text}</CardText>
+        <CardLink href={link} className="card-link">
+          {read}
+        </CardLink>
+      </CardBody>
+    </Card>
   );
 }
 export default MyCard;

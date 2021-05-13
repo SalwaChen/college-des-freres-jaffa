@@ -9,5 +9,7 @@ export { default as Footer } from "./components/Footer.js";
 export { default as Gallery } from "./components/pages/Gallery";
 export { default as Infos } from "./components/pages/Infos";
 export { default as SideNavbar } from "./components/SideNavbar.js";
+export { SliderData } from "./components/SliderData.js";
 
 ReactDOM.render(<App />, document.getElementById("root"));
+// ReactDOM.render(<div>Collège des Frères</div>, document.getElementById("title"));
