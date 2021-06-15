@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./SideNavbar.scss";
 import { faWindowClose } from "@fortawesome/free-regular-svg-icons";
 import SocialIcons from "./SocialIcons";
+import { GoHome, GoThreeBars } from "react-icons/go";
+import { AiOutlineClose } from "react-icons/ai";
 
 function SideNavbar(p) {
-  function handleClick(e) {
+  const [clicked, setClicked] = useState(true);
+
+  useEffect(() => {
+    document.body.addEventListener("click", (e) => {
+      console.log(e.target.className);
+      // if (!(e.target.className === "burger-icon-container")) {
+      //   document.querySelector(".container-side-nav").style.width = "0";
+      //   setClicked(false);
+      // }
+    });
+  }, [clicked]);
+
+  function handleClick() {
     document.querySelector(".container-side-nav").style.width = "250px";
-    //   document.querySelector(".navbar-container").classList.add("transition");
   }
   function handleClose() {
     document.querySelector(".container-side-nav").style.width = "0";
-    // document
-    //   .querySelector(".container-side-nav")
-    //   .classList.remove("transition");
   }
   let home,
     about,
@@ -50,18 +60,14 @@ function SideNavbar(p) {
           p.language === "he" && "burger-right"
         }`}
       >
-        <FontAwesomeIcon icon={faBars} />
+        <GoThreeBars />
       </div>
       <div
         className={`container-side-nav ${p.language === "he" && "side-right"}`}
       >
-        <FontAwesomeIcon
-          icon={faWindowClose}
-          className="fa-close"
-          onClick={handleClose}
-        />{" "}
+        <AiOutlineClose className="gr-close" onClick={handleClose} />{" "}
         <NavLink exact to="/">
-          <FontAwesomeIcon icon={faHome} className="fa-side-home" />
+          <GoHome onClick={handleClose} className="fa-side-home" />
         </NavLink>
         <nav className="nav">
           <div

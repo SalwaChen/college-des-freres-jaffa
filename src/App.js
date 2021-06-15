@@ -30,6 +30,7 @@ function App() {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
   const [navbar, setNavbar] = useState(true);
   const [clicked, setClicked] = useState(false);
+
   function handleClick(e) {
     if (!clicked) {
       setClicked(true);
@@ -45,11 +46,6 @@ function App() {
   }
 
   useEffect(() => {
-    console.log(document.title);
-    //   if (document.title != newTitle) {
-    //     document.title = newTitle;
-    // }
-    // $('meta[name="description"]').attr("content", newDescription);
     window.addEventListener("resize", () => {
       if (window.innerWidth <= 768) {
         setWindowSize(window.innerWidth);

@@ -1,11 +1,12 @@
 import { React, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container } from "react-bootstrap";
-import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import "./Contact.scss";
 import Modal from "../Modal";
-import SocialIcons from "../SocialIcons";
 import image from "../../images/secretary.png";
+import { FiPhoneCall } from "react-icons/fi";
+import { GoMail, GoLocation } from "react-icons/go";
 
 function Contact(p) {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,17 +17,28 @@ function Contact(p) {
       <div>
         בית ספר פרר יפו
         <br />
-        רחוב יפת 23
+        <a
+          href="https://ul.waze.com/ul?place=ChIJYYPhYLhMHRURpiwO1bjoaU4&ll=32.05222080%2C34.75319880&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+          target="_blank"
+          className="street-link"
+        >
+          רחוב יפת 23 -
+          <GoLocation />
+        </a>
         <br />
         תל-אביב יפו - 68130
         <br />
         ישראל
         <br />
-        <a href="+97236821890">טלפון - 03-6821890</a>
+        <a href="+97236821890" className="phone-link">
+          03-6821890 - טלפון <FiPhoneCall />
+        </a>
         <br />
         פקס - 03-6821883
         <br />
-        freres_jaffa@yahoo.com
+        <a href="mailto:freres_jaffa@yahoo.com" className="mail-link">
+          freres_jaffa@yahoo.com - <GoMail />
+        </a>
         <br />
       </div>
     );
@@ -36,17 +48,27 @@ function Contact(p) {
       <div>
         Collège des Frères Jaffa
         <br />
-        Rue Yeffet 23
+        <a
+          href="https://ul.waze.com/ul?place=ChIJYYPhYLhMHRURpiwO1bjoaU4&ll=32.05222080%2C34.75319880&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+          target="_blank"
+          className="street-link"
+        >
+          <GoLocation />- Rue Yeffet 23
+        </a>
         <br />
         Tel-Aviv Jaffa - 68130
         <br />
         Israël
         <br />
-        Téléphone - 03-6821890
+        <a href="tel:+97236821890" className="phone-link">
+          <FiPhoneCall />- Téléphone - 03-6821890
+        </a>
         <br />
         Fax - 03-6821883
         <br />
-        freres_jaffa@yahoo.com
+        <a href="mailto:freres_jaffa@yahoo.com" className="mail-link">
+          <GoMail />- freres_jaffa@yahoo.com
+        </a>
         <br />
       </div>
     );
@@ -56,17 +78,27 @@ function Contact(p) {
       <div>
         College des Freres
         <br />
-        St. Yeffet 23
+        <a
+          href="https://ul.waze.com/ul?place=ChIJYYPhYLhMHRURpiwO1bjoaU4&ll=32.05222080%2C34.75319880&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+          target="_blank"
+          className="street-link"
+        >
+          <GoLocation />- St. Yeffet 23
+        </a>
         <br />
         Tel-Aviv Yafo - 68130
         <br />
         Israel
         <br />
-        Telephone - 03-6821890
+        <a href="tel:+97236821890" className="phone-link">
+          <FiPhoneCall /> - Telephone - 03-6821890
+        </a>
         <br />
         Fax - 03-6821883
         <br />
-        freres_jaffa@yahoo.com
+        <a href="mailto:freres_jaffa@yahoo.com" className="mail-link">
+          <GoMail />- freres_jaffa@yahoo.com
+        </a>
         <br />
       </div>
     );

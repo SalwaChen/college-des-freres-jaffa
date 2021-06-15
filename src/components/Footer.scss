@@ -38,6 +38,18 @@
 .contact-us {
   text-align: center;
   a {
+    display: block;
+    color: $text;
+    &:hover {
+      text-decoration: none;
+      color: $text;
+    }
+  }
+}
+.no-hover {
+  color: $text;
+  &:hover {
+    color: $text;
     text-decoration: none;
   }
 }
@@ -60,7 +72,7 @@
   height: 20px;
   width: 100%;
   bottom: 0;
-  background-color: #7d8b91;
+  background-color: #9ea7ac;
   color: #fff;
   .copy-icon {
     margin-right: 5px;

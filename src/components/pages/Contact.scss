@@ -31,6 +31,15 @@
   position: relative;
   font-size: 2.2rem;
 }
+.phone-link,
+.mail-link,
+.street-link {
+  color: $text;
+  &:hover {
+    text-decoration: none;
+    color: $dark-blue;
+  }
+}
 .send {
   background-color: inherit;
   cursor: pointer;

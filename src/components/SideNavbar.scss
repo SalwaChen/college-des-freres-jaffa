@@ -20,7 +20,7 @@
   right: 0;
   direction: rtl;
   text-align: right;
-  .fa-close {
+  .gr-close {
     right: 200px;
   }
   .fa-side-home {
@@ -45,13 +45,13 @@
     color: white;
   }
 }
-.fa-close {
+.gr-close {
   display: block;
   position: absolute;
   top: 15px;
   left: 200px;
   font-size: 35px;
-  color: white;
+  color: #fff;
 }
 .fa-side-home {
   display: block;
