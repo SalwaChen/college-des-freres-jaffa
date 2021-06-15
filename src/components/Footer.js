@@ -5,6 +5,7 @@ import {
   faYoutube,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+import { AiOutlineCopyrightCircle } from "react-icons/ai";
 // import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import "./Footer.scss";
@@ -37,58 +38,63 @@ function Footer(p) {
     contact = "Contact us";
   }
   return (
-    <Container fluid className="footer-container">
-      <div className="footer-row">
-        <div className="address">{location}</div>
-        <div className="footer-icons">
-          <ul className="social-menu-footer">
-            <li>
-              <a
-                href="https://www.instagram.com/college.desfreres.jaffa/?hl=fr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icons"
-              >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="fa-footer instagram"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/freres.jaffa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icons"
-              >
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  className="fa-footer facebook"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCLROYlZCVurSBlfmLiU8sAg/videos"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icons"
-              >
-                <FontAwesomeIcon
-                  icon={faYoutube}
-                  className="fa-footer youtube"
-                />
-              </a>
-            </li>
-          </ul>
+    <>
+      <Container fluid className="footer-container">
+        <div className="footer-row">
+          <div className="address">{location}</div>
+          <div className="footer-icons">
+            <ul className="social-menu-footer">
+              <li>
+                <a
+                  href="https://www.instagram.com/college.desfreres.jaffa/?hl=fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icons"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="fa-footer instagram"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/freres.jaffa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icons"
+                >
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    className="fa-footer facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCLROYlZCVurSBlfmLiU8sAg/videos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icons"
+                >
+                  <FontAwesomeIcon
+                    icon={faYoutube}
+                    className="fa-footer youtube"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="contact-us">
+            {contact}
+            <a href="tel:+9723-6821890">03-6821890</a>
+          </div>
         </div>
-        <div className="contact-us">
-          {contact}
-          <div>03-6821890</div>
-        </div>
+      </Container>
+      <div className="copyrights">
+        <AiOutlineCopyrightCircle className="copy-icon" /> 2021 Salwa Chen
       </div>
-    </Container>
+    </>
   );
 }
 export default Footer;

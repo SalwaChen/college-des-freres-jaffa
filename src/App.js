@@ -45,6 +45,11 @@ function App() {
   }
 
   useEffect(() => {
+    console.log(document.title);
+    //   if (document.title != newTitle) {
+    //     document.title = newTitle;
+    // }
+    // $('meta[name="description"]').attr("content", newDescription);
     window.addEventListener("resize", () => {
       if (window.innerWidth <= 768) {
         setWindowSize(window.innerWidth);
@@ -80,6 +85,7 @@ function App() {
             onClick={() => {
               setLanguage("fr");
               handleClick();
+              document.title = "Collège des Frères Jaffa";
             }}
           >
             Français
@@ -88,6 +94,7 @@ function App() {
             onClick={() => {
               setLanguage("he");
               handleClick();
+              document.title = "בית ספר פרר יפו";
             }}
           >
             עברית
@@ -96,6 +103,7 @@ function App() {
             onClick={() => {
               setLanguage("en");
               handleClick();
+              document.title = "College des Freres Yafo";
             }}
           >
             English
