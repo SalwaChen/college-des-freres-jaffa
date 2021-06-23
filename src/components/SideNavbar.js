@@ -9,18 +9,6 @@ import { GoHome, GoThreeBars } from "react-icons/go";
 import { AiOutlineClose } from "react-icons/ai";
 
 function SideNavbar(p) {
-  const [clicked, setClicked] = useState(true);
-
-  useEffect(() => {
-    document.body.addEventListener("click", (e) => {
-      console.log(e.target.className);
-      // if (!(e.target.className === "burger-icon-container")) {
-      //   document.querySelector(".container-side-nav").style.width = "0";
-      //   setClicked(false);
-      // }
-    });
-  }, [clicked]);
-
   function handleClick() {
     document.querySelector(".container-side-nav").style.width = "250px";
   }

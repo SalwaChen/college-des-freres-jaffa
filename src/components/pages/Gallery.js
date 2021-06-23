@@ -1,44 +1,40 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Gallery.scss";
 import Slider from "../Slider";
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 function Gallery(p) {
-  let more = "Plus de Photos...";
+  let more = (
+    <div>
+      Plus de Photos
+      <AiOutlineArrowRight className="icon" />
+    </div>
+  );
   if (p.language === "he") {
-    more = "לעוד תמונות...";
+    more = (
+      <div>
+        <AiOutlineArrowLeft className="icon-he" />
+        לעוד תמונות
+      </div>
+    );
   } else if (p.language === "en") {
-    more = "For more pictures...";
+    more = (
+      <div>
+        For more pics
+        <AiOutlineArrowRight className="icon" />
+      </div>
+    );
   }
-  // } else {
-  //   more = "Plus de Photos...";
-  // }
-  // const [clicked, setClicked] = useState(false);
-  // function returnAlbum() {
-  //   setClicked(true);
-  // }
-  // if (!clicked) {
-  //   return (
-  //     <Container className="gallery-cont">
-  //       <img
-  //         src="./img/1.jpg"
-  //         alt="dss"
-  //         className="thumbnail"
-  //         onClick={returnAlbum}
-  //       />
-  //     </Container>
-  //   );
-  // } else {
   return (
     <>
       <Slider slides={p.slides} />
-      <div>
+      <button className="b-more">
         <a href="https://www.facebook.com/freres.jaffa/photos" className="more">
           {more}
         </a>
-      </div>
+      </button>
     </>
   );
-  // }
 }
 
 export default Gallery;

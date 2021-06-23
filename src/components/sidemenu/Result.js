@@ -3,7 +3,7 @@ import "./Result.scss";
 const Result = (idResult) => {
   if (idResult.idResult === "1987") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1987">
           <thead>
             <tr>
@@ -58,11 +58,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1988") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1988">
           <thead>
             <tr>
@@ -113,11 +113,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1989") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1989">
           <thead>
             <tr>
@@ -160,11 +160,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1990") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1990">
           <thead>
             <tr>
@@ -223,11 +223,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1991") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1991">
           <thead>
             <tr>
@@ -298,11 +298,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1992") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1992">
           <thead>
             <tr>
@@ -373,11 +373,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1993") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1993">
           <thead>
             <tr>
@@ -452,11 +452,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1994") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1994">
           <thead>
             <tr>
@@ -503,11 +503,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1995") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1995">
           <thead>
             <tr>
@@ -578,11 +578,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1996") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1996">
           <thead>
             <tr>
@@ -633,11 +633,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1997") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1997">
           <thead>
             <tr>
@@ -692,11 +692,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1998") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1998">
           <thead>
             <tr>
@@ -751,11 +751,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "1999") {
     return (
-      <>
+      <div className="table-cont">
         <table id="1999">
           <thead>
             <tr>
@@ -814,11 +814,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2000") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2000">
           <thead>
             <tr>
@@ -913,11 +913,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2001") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2001">
           <thead>
             <tr>
@@ -984,11 +984,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2002") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2002">
           <thead>
             <tr>
@@ -1063,11 +1063,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2003") {
     return (
-      <>
+      <div className="table-cont">
         <table id="200">
           <thead>
             <tr>
@@ -1146,11 +1146,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2004") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2004">
           <thead>
             <tr>
@@ -1217,11 +1217,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2005") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2005">
           <thead>
             <tr>
@@ -1332,11 +1332,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2006") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2006">
           <thead>
             <tr>
@@ -1411,11 +1411,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2007") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2007">
           <thead>
             <tr>
@@ -1530,11 +1530,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2008") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2008">
           <thead>
             <tr>
@@ -1645,11 +1645,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2009") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2009">
           <thead>
             <tr>
@@ -1740,11 +1740,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2010") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2010">
           <thead>
             <tr>
@@ -1807,11 +1807,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2011") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2011">
           <thead>
             <tr>
@@ -1870,11 +1870,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2012") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2012">
           <thead>
             <tr>
@@ -1937,11 +1937,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2013") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2013">
           <thead>
             <tr>
@@ -2028,11 +2028,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2014") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2014">
           <thead>
             <tr>
@@ -2107,11 +2107,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2015") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2015">
           <thead>
             <tr>
@@ -2186,11 +2186,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2016") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2016">
           <thead>
             <tr>
@@ -2261,11 +2261,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2017") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2017">
           <thead>
             <tr>
@@ -2364,11 +2364,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2018") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2018">
           <thead>
             <tr>
@@ -2475,11 +2475,11 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else if (idResult.idResult === "2019") {
     return (
-      <>
+      <div className="table-cont">
         <table id="2019">
           <thead>
             <tr>
@@ -2602,7 +2602,7 @@ const Result = (idResult) => {
             </tr>
           </tbody>
         </table>
-      </>
+      </div>
     );
   } else return null;
 };

@@ -21,9 +21,12 @@ function Footer(p) {
         <a
           href="https://ul.waze.com/ul?place=ChIJYYPhYLhMHRURpiwO1bjoaU4&ll=32.05222080%2C34.75319880&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
           target="_blank"
+          rel="noreferrer"
           className="no-hover"
         >
-          רחוב יפת 23 <GoLocation />
+          <GoLocation className="location-icon" />
+          <br />
+          רחוב יפת 23
           <div>תל אביב-יפו </div>
         </a>
       </div>
@@ -35,9 +38,12 @@ function Footer(p) {
         <a
           href="https://ul.waze.com/ul?place=ChIJYYPhYLhMHRURpiwO1bjoaU4&ll=32.05222080%2C34.75319880&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
           target="_blank"
+          rel="noreferrer"
           className="no-hover"
         >
-          <GoLocation />- Rue Yeffet 23
+          <GoLocation className="location-icon" />
+          <br />
+          Rue Yeffet 23
           <div>Tel-aviv Jaffa</div>
         </a>
       </div>
@@ -49,10 +55,11 @@ function Footer(p) {
         <a
           href="https://ul.waze.com/ul?place=ChIJYYPhYLhMHRURpiwO1bjoaU4&ll=32.05222080%2C34.75319880&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
           target="_blank"
+          rel="noreferrer"
           className="no-hover"
         >
-          <GoLocation />
-          St. Yefet 23<div>Tel-Aviv-Yafo</div>
+          <GoLocation className="location-icon" />
+          <br /> St. Yefet 23<div>Tel-Aviv-Yafo</div>
         </a>
       </div>
     );
@@ -107,9 +114,12 @@ function Footer(p) {
             </ul>
           </div>
           <div className="contact-us">
-            {contact}
             <a href="tel:+9723-6821890">
-              <FiPhoneCall />- 03-6821890
+              {" "}
+              <FiPhoneCall className="phone-icon" />
+              <br /> {contact}
+              <br />
+              03-6821890
             </a>
           </div>
         </div>

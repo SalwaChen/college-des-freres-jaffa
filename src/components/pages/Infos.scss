@@ -10,7 +10,7 @@
   display: flex;
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -120px;
+  margin-bottom: -130px;
   &:after {
     content: "";
     display: block;
@@ -30,6 +30,7 @@
 }
 .side-menu {
   position: relative;
+  height: 220px;
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 6px;
@@ -54,6 +55,7 @@
   }
 }
 .image-collection {
+  margin-top: 30px;
   width: 180px;
 }
 @media only screen and (max-width: 768px) {

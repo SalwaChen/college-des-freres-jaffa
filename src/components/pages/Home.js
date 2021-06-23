@@ -13,22 +13,22 @@ function Home(p) {
         alt="la salle illustration"
       />
       <div className="wrap-column">
-        <div className="liens labo">
+        <button className="spin circle">
           <a href="https://labolanguesfrereslasallejaffa.blogspot.com/">
             <div className="column">
               <div>Lien</div>
               <div>AEFE</div>
             </div>
           </a>
-        </div>
-        <div className="liens">
+        </button>
+        <button className="spin circle">
           <a href="https://labolanguesfrereslasallejaffa.blogspot.com/">
             <div className="column">
               <div>Labo</div>
               <div>Langue</div>
             </div>
           </a>
-        </div>
+        </button>
       </div>
     </Container>
   );

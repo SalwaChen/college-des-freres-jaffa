@@ -1,14 +1,18 @@
 @import "../../utilities/_variables";
 
+.table-cont {
+  margin-right: 100px;
+  // height: 500px;
+}
 table {
-  margin-bottom: -120px;
-  &:after {
-    content: "";
-    display: block;
-    height: 110px;
-  }
+  margin-bottom: -130px;
+  // &:after {
+  //   content: "";
+  //   display: block;
+  //   height: 110px;
+  // }
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 15px;
   font-size: 0.9em;
   min-width: 310px;
   border-radius: 5px 5px 0 0;
@@ -33,5 +37,10 @@ table {
       border-bottom: 2px solid $blue;
       background-color: rgb(221, 219, 219);
     }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .table-cont {
+    margin: 0;
   }
 }

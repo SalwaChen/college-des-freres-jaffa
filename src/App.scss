@@ -80,11 +80,14 @@ body {
   color: rgb(61, 61, 61);
 }
 .fa-globe {
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
   color: $yellow;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 540px) {
   .dropdown {
-    left: 43%;
+    left: 41%;
     z-index: 100;
   }
 }
