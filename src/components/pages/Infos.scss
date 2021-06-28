@@ -30,7 +30,7 @@
 }
 .side-menu {
   position: relative;
-  height: 220px;
+  height: 160px;
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 6px;
@@ -38,7 +38,7 @@
   z-index: 10;
   .list {
     li {
-      min-width: 250px;
+      min-width: 270px;
       padding-left: 15px;
       padding-top: 2px;
       padding-right: 15px;
@@ -55,10 +55,14 @@
   }
 }
 .image-collection {
-  margin-top: 30px;
+  margin-top: 80px;
   width: 180px;
 }
-@media only screen and (max-width: 768px) {
+.pdf-icon{
+  background-color: lighten($pink, 10%);
+}
+
+@media only screen and (max-width:1020px) {
   .container-side-menu {
     align-items: center;
     flex-direction: column;

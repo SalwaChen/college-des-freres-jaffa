@@ -5,21 +5,21 @@ import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 function Gallery(p) {
   let more = (
-    <div>
+    <div className="more">
       Plus de Photos
       <AiOutlineArrowRight className="icon" />
     </div>
   );
   if (p.language === "he") {
     more = (
-      <div>
-        <AiOutlineArrowLeft className="icon-he" />
+      <div className="more">
+        <AiOutlineArrowLeft className="icon icon-he" />
         לעוד תמונות
       </div>
     );
   } else if (p.language === "en") {
     more = (
-      <div>
+      <div className="more">
         For more pics
         <AiOutlineArrowRight className="icon" />
       </div>
@@ -29,7 +29,7 @@ function Gallery(p) {
     <>
       <Slider slides={p.slides} />
       <button className="b-more">
-        <a href="https://www.facebook.com/freres.jaffa/photos" className="more">
+        <a href="https://www.facebook.com/freres.jaffa/photos" >
           {more}
         </a>
       </button>

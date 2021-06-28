@@ -29,6 +29,7 @@
   display: flex;
 }
 button {
+  color: $dark-blue;
   border: 0;
   position: relative;
 }
@@ -43,11 +44,11 @@ button::after {
 }
 
 .spin {
-  background-color: rgb(236, 236, 236);
-  height: 150px;
-  width: 150px;
+  background-color: rgb(246, 246, 236);
+  margin: 5px;
+  height: 140px;
+  width: 140px;
 }
-
 .spin::before,
 .spin::after {
   top: 0;
@@ -96,5 +97,8 @@ button::after {
     font-size: 15px;
     width: 70px;
     height: 70px;
+  }
+  .spin {
+    border: 1px solid $light-blue;
   }
 }

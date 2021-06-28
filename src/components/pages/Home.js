@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.scss";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import MyCard from "../MyCard";
 import laSalle from "../../images/la-salle-home.png";
 
@@ -13,22 +13,25 @@ function Home(p) {
         alt="la salle illustration"
       />
       <div className="wrap-column">
+           <a
+            href="https://www.aefe.fr/"
+            target="_black"
+          > 
         <button className="spin circle">
-          <a href="https://labolanguesfrereslasallejaffa.blogspot.com/">
             <div className="column">
-              <div>Lien</div>
+              Lien
               <div>AEFE</div>
             </div>
-          </a>
         </button>
+          </a>
+          <a href="https://labolanguesfrereslasallejaffa.blogspot.com/" target="_blank">
         <button className="spin circle">
-          <a href="https://labolanguesfrereslasallejaffa.blogspot.com/">
             <div className="column">
               <div>Labo</div>
               <div>Langue</div>
             </div>
-          </a>
         </button>
+          </a>
       </div>
     </Container>
   );
