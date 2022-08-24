@@ -8,15 +8,16 @@
   justify-content: center;
 }
 .image {
-  max-width: 600px;
-  width: 100vw;
+  max-width: 450px;
+  // max-height: 700px;
+  // width: 100vw;
   height: auto;
   border-radius: 10px;
 }
 .right-arrow {
   position: absolute;
   top: 50%;
-  right: 5vw;
+  right: 50px;
   font-size: 2rem;
   color: $gray;
   z-index: 10;
@@ -25,8 +26,8 @@
 }
 .left-arrow {
   position: absolute;
+  left: 50px;
   top: 50%;
-  left: 5vw;
   font-size: 2rem;
   color: $gray;
   z-index: 10;
@@ -41,4 +42,12 @@
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+}
+@media screen and(max-width: 768px) {
+  .contact-cont{
+    margin-top: 100px;
+  }
+  .slider{
+    margin-top: 150px;
+  }
 }

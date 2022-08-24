@@ -125,7 +125,7 @@ function Footer(p) {
         </div>
       </Container>
       <div className="copyrights">
-        <AiOutlineCopyrightCircle className="copy-icon" /> 2021 Salwa Chen
+        <AiOutlineCopyrightCircle className="copy-icon" /> 2022 Salwa Chen
       </div>
     </>
   );

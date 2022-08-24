@@ -2,7 +2,7 @@
 
 .cont-about {
   overflow: hidden;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -20,8 +20,9 @@
     height: 110px;
   }
 }
+
 .text {
-  width: 75%;
+  max-width: 65%;
 }
 .about-page {
   width: 100%;
@@ -30,6 +31,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  h1{
+    margin-bottom: 50px;
+  }
   .girl-on-books-img {
     width: 100%;
     height: auto;
@@ -38,7 +42,7 @@
     color: black;
     font-weight: 600;
     position: relative;
-    top: 235px;
+    top: 295px;
     right: 40px;
     &:hover {
       color: $dark-blue;
@@ -54,11 +58,15 @@
 @media only screen and(max-width: 768px) {
   .cont-about {
     font-size: 16px;
-    margin-top: 34px;
+    margin-top: 100px;
   }
   .about-page {
     .girl-on-books-img {
       width: 400px;
     }
+    .read-more {
+      top:235px;
+    }
   }
+
 }

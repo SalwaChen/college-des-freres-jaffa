@@ -1,6 +1,6 @@
 @import "../../utilities/_variables";
 
-//---------------- GALERY PAGE ---------------
+//---------------- GALLERY PAGE ---------------
 .gallery-cont {
   overflow: hidden;
   font-size: 1.2rem;
@@ -38,10 +38,11 @@
 }
 .b-more {
   margin: auto;
-  margin-top: 20px;
-  background: linear-gradient(0.25turn, $pink, #3899c0, #056bad);
-  border: 2px solid #fff;
-  border-radius: 50px;
+  margin-top: 60px;
+  background-color: #fff;
+  // background: linear-gradient(0.25turn, $pink, #3899c0, #056bad);
+  // border: 2px solid #fff;
+  // border-radius: 50px;
   padding: 6px 12px;
   position: relative;
   display: flex;
@@ -51,13 +52,9 @@
   }
 }
 .more {
-  color: white;
+  color: gray;
   font-size: 1.2rem;
   &:hover {
     text-decoration: none;
   }
 }
-
-// @media screen and(max-width: 768px) {
-//
-// }

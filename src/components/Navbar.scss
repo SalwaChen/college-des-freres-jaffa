@@ -19,7 +19,7 @@
 }
 .nav-links {
   height: 40px;
-  color: $text;
+  color: lighten($text, 35%);
   text-decoration: none;
   font-size: 20px;
   &:hover {
@@ -55,7 +55,7 @@
 }
 .gallery {
   .fa-nav {
-    color: green;
+    color: $dark-blue;
   }
 }
 .home {
@@ -75,7 +75,7 @@
 }
 .infos {
   .fa-nav {
-    color: $dark-blue;
+    color: $green;
   }
 }
 // .infos-dropdown {

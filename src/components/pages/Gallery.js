@@ -29,9 +29,7 @@ function Gallery(p) {
     <>
       <Slider slides={p.slides} />
       <button className="b-more">
-        <a href="https://www.facebook.com/freres.jaffa/photos" >
-          {more}
-        </a>
+        <a href="https://www.facebook.com/freres.jaffa/photos">{more}</a>
       </button>
     </>
   );

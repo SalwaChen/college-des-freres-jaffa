@@ -7,7 +7,7 @@
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin-top: 45px;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,8 +22,11 @@
   }
 }
 .la-salle-home {
-  width: 80%;
+  width: 50%;
   margin-bottom: 30px;
+}
+.column{
+  font-size: 0.8rem;
 }
 .wrap-column {
   display: flex;
@@ -46,8 +49,8 @@ button::after {
 .spin {
   background-color: rgb(246, 246, 236);
   margin: 5px;
-  height: 140px;
-  width: 140px;
+  height: 100px;
+  width: 100px;
 }
 .spin::before,
 .spin::after {
@@ -91,7 +94,14 @@ button::after {
 }
 @media only screen and (max-width: 768px) {
   .home-cont {
-    margin-top: 80px;
+    margin-top: 100px;
+    // max-width: 90%;
+    .wrap-column{
+      margin-bottom:50px;
+    }
+    img{
+      width: 45vw;
+    }
   }
   .liens {
     font-size: 15px;
