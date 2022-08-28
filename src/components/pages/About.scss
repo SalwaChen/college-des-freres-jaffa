@@ -57,10 +57,13 @@
 }
 @media only screen and(max-width: 768px) {
   .cont-about {
-    font-size: 16px;
-    margin-top: 100px;
+    font-size: 12px;
+    margin-top: 100px; 
   }
-  .about-page {
+  .about-page {  
+    h1{
+    margin-bottom: 20px;
+  }
     .girl-on-books-img {
       width: 400px;
     }
@@ -68,5 +71,4 @@
       top:235px;
     }
   }
-
 }

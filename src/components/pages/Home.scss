@@ -95,12 +95,11 @@ button::after {
 @media only screen and (max-width: 768px) {
   .home-cont {
     margin-top: 100px;
-    // max-width: 90%;
     .wrap-column{
       margin-bottom:50px;
     }
-    img{
-      width: 45vw;
+    .la-salle-home {
+      width: 65%;
     }
   }
   .liens {
