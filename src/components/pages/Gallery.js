@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import SanityClient from "../../client.js";
 import "./Gallery.scss";
 import Slider from "../Slider";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
+import { Container } from "react-bootstrap";
+import { getPositionOfLineAndCharacter } from "typescript";
+import { post } from "jquery";
 
 function Gallery(p) {
   let more = (
@@ -25,6 +30,7 @@ function Gallery(p) {
       </div>
     );
   }
+
   return (
     <>
       <Slider slides={p.slides} />

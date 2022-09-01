@@ -7,7 +7,7 @@
   border-radius: 6px;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin-top: 10vh;
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +18,7 @@
   &:after {
     content: "";
     display: block;
-    height: 110px;
+    height: 220px;
   }
 }
 .la-salle-home {
@@ -92,6 +92,51 @@ button::after {
 .circle::after {
   border-radius: 100%;
 }
+// ---------- BLOG POSTS ----------------
+
+.section-cont{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.articles-flex{
+
+}
+.link-blog{
+  color: lighten($text, 25%);
+  h3{
+    font-size: 1.2rem;
+  }
+  &:hover{
+    color: lighten($text, 25%);
+    text-decoration: none;
+  }
+}
+.blog-grid {
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 200px;
+}
+.img-span{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid  rgb(199, 199, 199);
+  border-radius: 10px 10px 1px 1px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 12px 20px -20px;
+  // filter:white(50%);
+
+  img{
+  border-radius: 10px 10px 1px 1px;
+  width: 200px;
+  height: 120px;
+}
+}
+
 @media only screen and (max-width: 768px) {
   .home-cont {
     margin-top: 100px;
